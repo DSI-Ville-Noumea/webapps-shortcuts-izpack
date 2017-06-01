@@ -1,0 +1,35 @@
+<izpack:shortcuts version="5.0"
+                  xmlns:izpack="http://izpack.org/schema/shortcuts"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://izpack.org/schema/shortcuts http://izpack.org/schema/5.0/izpack-shortcuts-5.0.xsd">
+
+    <!--<lateShortcutInstall/>-->
+
+    <!--<programGroup defaultName="Applications Mairie"/>-->
+    <!--applications="yes"-->
+    <!--programGroup="yes"-->
+    <!--iconFile="C:\Program Files\Applications Mairie\icons\ev.ico"-->
+    <shortcut name="toto"
+              iconIndex="0"
+              target="C:\Program Files\Applications Mairie\launch_ev.bat"
+              desktop="yes"
+              startup="no">
+
+        <createForPack name="pack_1"/>
+    </shortcut>
+
+    <!--<shortcut name="Easy Vista"-->
+              <!--iconIndex="0"-->
+              <!--target="/opt/Applications Mairie/Easy Vista/launch_ev.bat"-->
+              <!--iconFile="/opt/Applications Mairie/Easy Vista/icons/ev.ico"-->
+              <!--initialState="normal"-->
+              <!--applications="yes"-->
+              <!--desktop="yes"-->
+              <!--startMenu="yes"-->
+              <!--startup="yes"-->
+              <!--programGroup="yes">-->
+
+        <!--<createForPack name="Agents_Mairie"/>-->
+        <!--<os family="unix"/>-->
+    <!--</shortcut>-->
+</izpack:shortcuts>

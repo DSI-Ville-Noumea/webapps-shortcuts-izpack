@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<izpack:installation version="5.0"
+              xmlns:izpack="http://izpack.org/schema/installation"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://izpack.org/schema/installation http://izpack.org/schema/5.0/izpack-installation-5.0.xsd">
+
+    <info>
+        <appname>Raccourcis Applications Mairie</appname>
+        <appversion>1.00.00-SNAPSHOT</appversion>
+        <appsubpath>webapps-shortcuts-izpack</appsubpath>
+        <javaversion>1.8</javaversion>
+    </info>
+
+    <resources>
+        <res id="LicencePanel.licence" src="legal/License.txt"/>
+        <res id="InfoPanel.info" src="doc/Readme.txt" parse="yes"/>
+        <res id="HTMLHelloPanel.welcome" src="welcome.html"/>
+        <res id="HTMLInfoPanel.welcome" src="welcome.html"/>
+        <res id="IZPackLogo" src="images/izpack-logo-medium.png"/>
+        <res id="Installer.image" src="images/package-download_64.png"/>
+        <res id="TargetPanel.dir.unix" src="TargetDirUnix.txt"/>
+        <res id="shortcutSpec.xml" src="shortcutSpec.xml" />
+    </resources>
+
+    <variables>
+        <variable name="InstallerFrame.logfilePath" value="Default"/>
+        <variable name="WELCOME_TEXT" value="Raccourcis Applications Mairie installer"/>
+        <variable name="WELCOME_VERSION" value="Version: 1.0.0"/>
+        <variable name="TargetPanel.dir.windows" value="C:\Program Files\"/>
+        <variable name="Application.folder" value="Applications Mairie"/>
+        <variable name="Application.name" value="Raccourcis Applications Mairie"/>
+        <variable name="Application.shortname" value="webapps-shortcuts-izpack"/>
+    </variables>
+
+
+
+    <guiprefs width="800" height="600" resizable="no">
+        <splash>${Installer.image}</splash>
+        <!--<laf name="substance">-->
+            <!--<os family="windows" />-->
+            <!--<os family="unix" />-->
+            <!--<param name="variant" value="mist-silver" />-->
+        <!--</laf>-->
+        <!--<laf name="substance">-->
+            <!--<os family="mac" />-->
+            <!--<param name="variant" value="mist-aqua" />-->
+        <!--</laf>-->
+        <modifier key="useHeadingPanel" value="yes" />
+    </guiprefs>
+
+    <locale>
+        <!--<langpack iso3="eng"/>-->
+        <langpack iso3="fra"/>
+    </locale>
+
+    <natives>
+    <native type="izpack" name="ShellLink.dll"/>
+    <native type="izpack" name="ShellLink_x64.dll"/>
+    </natives>
+
+    <panels>
+        <panel classname="HTMLInfoPanel"    id="welcome"/>
+        <panel classname="TargetPanel"      id="install_dir" />
+        <panel classname="PacksPanel"       id="sdk_pack_select"/>
+        <panel classname="InstallPanel"     id="install"/>
+        <panel classname="ShortcutPanel"    id="shortcuts"/>
+        <panel classname="FinishPanel"      id="finish"/>
+    </panels>
+    <packs>
+        <pack name="pack_1" preselected="yes" required="yes">
+            <description>My first pack</description>
+            <file src="pack1_content/ev.ico" targetdir="$INSTALL_PATH/$Application.folder/icons"/>
+            <file src="pack1_content/launch_ev.bat" targetdir="$INSTALL_PATH/$Application.folder"/>
+        </pack>
+    </packs>
+
+
+</izpack:installation>
