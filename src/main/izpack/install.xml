@@ -26,8 +26,8 @@
         <variable name="InstallerFrame.logfilePath" value="Default"/>
         <variable name="WELCOME_TEXT" value="Raccourcis Applications Mairie installer"/>
         <variable name="WELCOME_VERSION" value="Version: 1.0.0"/>
-        <variable name="TargetPanel.dir.windows" value="C:\Program Files\"/>
         <variable name="Application.folder" value="Applications Mairie"/>
+        <variable name="TargetPanel.dir.windows" value="C:\Program Files\"/>
         <variable name="Application.name" value="Raccourcis Applications Mairie"/>
         <variable name="Application.shortname" value="webapps-shortcuts-izpack"/>
     </variables>
@@ -36,21 +36,21 @@
 
     <guiprefs width="800" height="600" resizable="no">
         <splash>${Installer.image}</splash>
-        <!--<laf name="substance">-->
-            <!--<os family="windows" />-->
-            <!--<os family="unix" />-->
-            <!--<param name="variant" value="mist-silver" />-->
-        <!--</laf>-->
-        <!--<laf name="substance">-->
-            <!--<os family="mac" />-->
-            <!--<param name="variant" value="mist-aqua" />-->
-        <!--</laf>-->
+        <laf name="substance">
+            <os family="windows" />
+            <os family="unix" />
+            <param name="variant" value="mist-silver" />
+        </laf>
+        <laf name="substance">
+            <os family="mac" />
+            <param name="variant" value="mist-aqua" />
+        </laf>
         <modifier key="useHeadingPanel" value="yes" />
     </guiprefs>
 
     <locale>
-        <!--<langpack iso3="eng"/>-->
-        <langpack iso3="fra"/>
+        <langpack iso3="eng"/>
+        <!--<langpack iso3="fra"/>-->
     </locale>
 
     <natives>
@@ -62,15 +62,17 @@
         <panel classname="HTMLInfoPanel"    id="welcome"/>
         <panel classname="TargetPanel"      id="install_dir" />
         <panel classname="PacksPanel"       id="sdk_pack_select"/>
-        <panel classname="InstallPanel"     id="install"/>
         <panel classname="ShortcutPanel"    id="shortcuts"/>
+        <panel classname="InstallPanel"     id="install"/>
         <panel classname="FinishPanel"      id="finish"/>
     </panels>
     <packs>
-        <pack name="pack_1" preselected="yes" required="yes">
-            <description>My first pack</description>
-            <file src="pack1_content/ev.ico" targetdir="$INSTALL_PATH/$Application.folder/icons"/>
-            <file src="pack1_content/launch_ev.bat" targetdir="$INSTALL_PATH/$Application.folder"/>
+        <pack name="agent_pack" preselected="yes" required="yes">
+            <description>Ensemble des applications communes à tous les agents</description>
+            <file src="agent_content/ev.ico" targetdir="$INSTALL_PATH/$Application.folder/Easy Vista/icons"/>
+            <file src="agent_content/launch_ev.bat" targetdir="$INSTALL_PATH/$Application.folder/Easy Vista"/>
+            <file src="agent_content/kiosque_rh.ico" targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH/icons"/>
+            <file src="agent_content/launch_krh.bat" targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH"/>
         </pack>
     </packs>
 

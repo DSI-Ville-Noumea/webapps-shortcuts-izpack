@@ -3,33 +3,29 @@
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:schemaLocation="http://izpack.org/schema/shortcuts http://izpack.org/schema/5.0/izpack-shortcuts-5.0.xsd">
 
-    <!--<lateShortcutInstall/>-->
-
-    <!--<programGroup defaultName="Applications Mairie"/>-->
-    <!--applications="yes"-->
-    <!--programGroup="yes"-->
-    <!--iconFile="C:\Program Files\Applications Mairie\icons\ev.ico"-->
-    <shortcut name="toto"
-              iconIndex="0"
-              target="C:\Program Files\Applications Mairie\launch_ev.bat"
+    <programGroup defaultName="Applications Mairie" location="startMenu"/>
+    <shortcut name="easyVista"
+              target="C:\Program Files\Applications Mairie\Easy Vista\launch_ev.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Easy Vista"
+              iconFile="C:\Program Files\Applications Mairie\Easy Vista\icons\ev.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
               desktop="yes"
-              startup="no">
+              startMenu="yes">
 
-        <createForPack name="pack_1"/>
+        <createForPack name="agent_pack"/>
     </shortcut>
+    <shortcut name="kiosqueRh"
+              target="C:\Program Files\Applications Mairie\Kiosque RH\launch_krh.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Kiosque RH"
+              iconFile="C:\Program Files\Applications Mairie\Kiosque RH\icons\kiosque_rh.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
 
-    <!--<shortcut name="Easy Vista"-->
-              <!--iconIndex="0"-->
-              <!--target="/opt/Applications Mairie/Easy Vista/launch_ev.bat"-->
-              <!--iconFile="/opt/Applications Mairie/Easy Vista/icons/ev.ico"-->
-              <!--initialState="normal"-->
-              <!--applications="yes"-->
-              <!--desktop="yes"-->
-              <!--startMenu="yes"-->
-              <!--startup="yes"-->
-              <!--programGroup="yes">-->
-
-        <!--<createForPack name="Agents_Mairie"/>-->
-        <!--<os family="unix"/>-->
-    <!--</shortcut>-->
+        <createForPack name="agent_pack"/>
+    </shortcut>
 </izpack:shortcuts>
