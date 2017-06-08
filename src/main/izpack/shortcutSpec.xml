@@ -4,7 +4,7 @@
                   xsi:schemaLocation="http://izpack.org/schema/shortcuts http://izpack.org/schema/5.0/izpack-shortcuts-5.0.xsd">
 
     <programGroup defaultName="Applications Mairie" location="startMenu"/>
-    <shortcut name="easyVista"
+    <shortcut name="Easy Vista"
               target="C:\Program Files\Applications Mairie\Easy Vista\launch_ev.bat"
               workingDirectory="C:\Program Files\Applications Mairie\Easy Vista"
               iconFile="C:\Program Files\Applications Mairie\Easy Vista\icons\ev.ico"
@@ -14,9 +14,9 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="agent_pack"/>
+        <createForPack name="Easy Vista"/>
     </shortcut>
-    <shortcut name="kiosqueRh"
+    <shortcut name="Kiosque Rh"
               target="C:\Program Files\Applications Mairie\Kiosque RH\launch_krh.bat"
               workingDirectory="C:\Program Files\Applications Mairie\Kiosque RH"
               iconFile="C:\Program Files\Applications Mairie\Kiosque RH\icons\kiosque_rh.ico"
@@ -26,6 +26,102 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="agent_pack"/>
+        <createForPack name="Kiosque RH"/>
+    </shortcut>
+    <shortcut name="Web Intelligence"
+              target="C:\Program Files\Applications Mairie\Business Intelligence\launch_bi.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Business Intelligence"
+              iconFile="C:\Program Files\Applications Mairie\Business Intelligence\icons\webi.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Web Intelligence"/>
+    </shortcut>
+    <shortcut name="Intranet Mairie"
+              target="C:\Program Files\Applications Mairie\Portail\launch_portail.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Portail"
+              iconFile="C:\Program Files\Applications Mairie\Portail\icons\hypolite.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Portail Intranet"/>
+    </shortcut>
+    <shortcut name="Plan Intéractif"
+              target="C:\Program Files\Applications Mairie\Plan Interactif\launch_plan_int.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Plan Interactif"
+              iconFile="C:\Program Files\Applications Mairie\Plan Interactif\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Plan Interactif"/>
+    </shortcut>
+    <shortcut name="Outlook Webmail"
+              target="C:\Program Files\Applications Mairie\Outlook Webmail\launch_webmail.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Outlook Webmail"
+              iconFile="C:\Program Files\Applications Mairie\Outlook Webmail\icons\webmail.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Outlook Webmail"/>
+    </shortcut>
+    <shortcut name="Post-Office"
+              target="C:\Program Files\Applications Mairie\Post-Office\launch_po.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Post-Office"
+              iconFile="C:\Program Files\Applications Mairie\Post-Office\icons\po.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Outlook Webmail"/>
+    </shortcut>
+    <shortcut name="Astre GF"
+              target="C:\Program Files\Applications Mairie\Astre GF\launch_astre.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Astre GF"
+              iconFile="C:\Program Files\Applications Mairie\Astre GF\icons\astre.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Astre GF"/>
+    </shortcut>
+    <shortcut name="Blog Amicale"
+              target="C:\Program Files\Applications Mairie\Blog Amicale\launch_amicale.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Blog Amicale"
+              iconFile="C:\Program Files\Applications Mairie\Blog Amicale\icons\amicale.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Blog Amicale"/>
+    </shortcut>
+    <shortcut name="Allo! Mairie"
+              target="C:\Program Files\Applications Mairie\Allo Mairie\launch_allo_mairie.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Allo Mairie"
+              iconFile="C:\Program Files\Applications Mairie\Allo Mairie\icons\allo_mairie.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Allo! Mairie"/>
     </shortcut>
 </izpack:shortcuts>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <izpack:installation version="5.0"
-              xmlns:izpack="http://izpack.org/schema/installation"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://izpack.org/schema/installation http://izpack.org/schema/5.0/izpack-installation-5.0.xsd">
+                     xmlns:izpack="http://izpack.org/schema/installation"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://izpack.org/schema/installation http://izpack.org/schema/5.0/izpack-installation-5.0.xsd">
 
     <info>
         <appname>Raccourcis Applications Mairie</appname>
@@ -17,7 +17,7 @@
         <res id="HTMLHelloPanel.welcome" src="welcome.html"/>
         <res id="HTMLInfoPanel.welcome" src="welcome.html"/>
         <res id="IZPackLogo" src="images/izpack-logo-medium.png"/>
-        <res id="Installer.image" src="images/package-download_64.png"/>
+        <res id="Installer.image" src="images/DSI.png"/>
         <res id="TargetPanel.dir.unix" src="TargetDirUnix.txt"/>
         <res id="shortcutSpec.xml" src="shortcutSpec.xml" />
     </resources>
@@ -36,16 +36,16 @@
 
     <guiprefs width="800" height="600" resizable="no">
         <splash>${Installer.image}</splash>
-        <laf name="substance">
-            <os family="windows" />
-            <os family="unix" />
-            <param name="variant" value="mist-silver" />
-        </laf>
-        <laf name="substance">
-            <os family="mac" />
-            <param name="variant" value="mist-aqua" />
-        </laf>
-        <modifier key="useHeadingPanel" value="yes" />
+        <!--<laf name="substance">-->
+            <!--<os family="windows" />-->
+            <!--<os family="unix" />-->
+            <!--<param name="variant" value="mist-silver" />-->
+        <!--</laf>-->
+        <!--<laf name="substance">-->
+            <!--<os family="mac" />-->
+            <!--<param name="variant" value="mist-aqua" />-->
+        <!--</laf>-->
+        <!--<modifier key="useHeadingPanel" value="yes" />-->
     </guiprefs>
 
     <locale>
@@ -54,25 +54,72 @@
     </locale>
 
     <natives>
-    <native type="izpack" name="ShellLink.dll"/>
-    <native type="izpack" name="ShellLink_x64.dll"/>
+        <native type="izpack" name="ShellLink.dll"/>
+        <native type="izpack" name="ShellLink_x64.dll"/>
     </natives>
 
     <panels>
         <panel classname="HTMLInfoPanel"    id="welcome"/>
         <panel classname="TargetPanel"      id="install_dir" />
-        <panel classname="PacksPanel"       id="sdk_pack_select"/>
-        <panel classname="ShortcutPanel"    id="shortcuts"/>
+        <!--<panel classname="PacksPanel"       id="sdk_pack_select"/>-->
+        <panel classname="TreePacksPanel"   id="tree_pack"/>
         <panel classname="InstallPanel"     id="install"/>
+        <panel classname="ShortcutPanel"    id="shortcuts"/>
         <panel classname="FinishPanel"      id="finish"/>
     </panels>
     <packs>
-        <pack name="agent_pack" preselected="yes" required="yes">
+        <pack name="Agent Mairie" preselected="yes" required="yes">
             <description>Ensemble des applications communes à tous les agents</description>
-            <file src="agent_content/ev.ico" targetdir="$INSTALL_PATH/$Application.folder/Easy Vista/icons"/>
-            <file src="agent_content/launch_ev.bat" targetdir="$INSTALL_PATH/$Application.folder/Easy Vista"/>
-            <file src="agent_content/kiosque_rh.ico" targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH/icons"/>
-            <file src="agent_content/launch_krh.bat" targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH"/>
+        </pack>
+        <pack name="Portail Intranet" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Portail Intranet</description>
+            <file src="common_agent/portail/hypolite.ico"            targetdir="$INSTALL_PATH/$Application.folder/Portail/icons"/>
+            <file src="common_agent/portail/launch_portail.bat"      targetdir="$INSTALL_PATH/$Application.folder/Portail"/>
+        </pack>
+        <pack name="Easy Vista" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Easy Vista</description>
+            <file src="common_agent/easy_vista/ev.ico"          targetdir="$INSTALL_PATH/$Application.folder/Easy Vista/icons"/>
+            <file src="common_agent/easy_vista/launch_ev.bat"   targetdir="$INSTALL_PATH/$Application.folder/Easy Vista"/>
+        </pack>
+        <pack name="Kiosque RH" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Kiosque RH</description>
+            <file src="common_agent/kiosque_rh/kiosque_rh.ico"  targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH/icons"/>
+            <file src="common_agent/kiosque_rh/launch_krh.bat"  targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH"/>
+        </pack>
+        <pack name="Web Intelligence" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Web Intelligence</description>
+            <file src="common_agent/bi/webi.ico"                targetdir="$INSTALL_PATH/$Application.folder/Business Intelligence/icons"/>
+            <file src="common_agent/bi/launch_bi.bat"           targetdir="$INSTALL_PATH/$Application.folder/Business Intelligence"/>
+        </pack>
+        <pack name="Plan Interactif" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Plan Intéractif de la ville</description>
+            <file src="common_agent/plan_interactif/esri.ico"                targetdir="$INSTALL_PATH/$Application.folder/Plan Interactif/icons"/>
+            <file src="common_agent/plan_interactif/launch_plan_int.bat"     targetdir="$INSTALL_PATH/$Application.folder/Plan Interactif"/>
+        </pack>
+        <pack name="Outlook Webmail" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Outlook Webmail</description>
+            <file src="common_agent/webmail/webmail.ico"                targetdir="$INSTALL_PATH/$Application.folder/Outlook Webmail/icons"/>
+            <file src="common_agent/webmail/launch_webmail.bat"           targetdir="$INSTALL_PATH/$Application.folder/Outlook Webmail"/>
+        </pack>
+        <pack name="Post-Office" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Outlook Webmail</description>
+            <file src="common_agent/post_office/po.ico"                targetdir="$INSTALL_PATH/$Application.folder/Post-Office/icons"/>
+            <file src="common_agent/post_office/launch_po.bat"           targetdir="$INSTALL_PATH/$Application.folder/Post-Office"/>
+        </pack>
+        <pack name="Astre GF" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Astre GF</description>
+            <file src="common_agent/astre/astre.ico"                targetdir="$INSTALL_PATH/$Application.folder/Astre GF/icons"/>
+            <file src="common_agent/astre/launch_astre.bat"           targetdir="$INSTALL_PATH/$Application.folder/Astre GF"/>
+        </pack>
+        <pack name="Blog Amicale" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Blog de l'Amicale</description>
+            <file src="common_agent/amicale/amicale.ico"                targetdir="$INSTALL_PATH/$Application.folder/Blog Amicale/icons"/>
+            <file src="common_agent/amicale/launch_amicale.bat"           targetdir="$INSTALL_PATH/$Application.folder/Blog Amicale"/>
+        </pack>
+        <pack name="Allo! Mairie" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Blog de l'Amicale</description>
+            <file src="common_agent/allo_mairie/allo_mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Allo Mairie/icons"/>
+            <file src="common_agent/allo_mairie/launch_allo_mairie.bat"           targetdir="$INSTALL_PATH/$Application.folder/Allo Mairie"/>
         </pack>
     </packs>
 
