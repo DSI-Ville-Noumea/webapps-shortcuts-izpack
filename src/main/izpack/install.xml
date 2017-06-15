@@ -20,7 +20,6 @@
         <res id="TargetPanel.dir.unix" src="TargetDirUnix.txt"/>
         <res id="shortcutSpec.xml" src="shortcutSpec.xml" />
         <res id="LicencePanel.licence" src="legal/License.txt"/>
-        <!--<res id="PDFLicencePanel.licence" src="legal/charte_dsi.pdf"/>-->
     </resources>
 
     <variables>
@@ -28,39 +27,18 @@
         <variable name="WELCOME_TEXT" value="Raccourcis Applications Mairie installer"/>
         <variable name="WELCOME_VERSION" value="Version: 1.0.0"/>
         <variable name="Application.folder" value="Applications Mairie"/>
-        <variable name="TargetPanel.dir.windows" value="C:\Program Files\"/>
+        <variable name="TargetPanel.dir.windows" value="C:\Program Files\$Application.folder"/>
         <variable name="Application.name" value="Raccourcis Applications Mairie"/>
         <variable name="Application.shortname" value="webapps-shortcuts-izpack"/>
     </variables>
 
-    <!--<jar src="lib/batik-awt-util-1.7.jar" />-->
-    <!--<jar src="lib/batik-dom-1.7.jar" />-->
-    <!--<jar src="lib/batik-svg-dom-1.7.jar" />-->
-    <!--<jar src="lib/batik-svggen-1.7.jar" />-->
-    <!--<jar src="lib/batik-util-1.7.jar" />-->
-    <!--<jar src="lib/batik-xml-1.7.jar" />-->
-    <!--<jar src="lib/jai-codec-1.7.jar" />-->
-    <!--<jar src="lib/jai-core-1.7.jar" />-->
-
-
-
     <guiprefs width="800" height="600" resizable="no">
         <splash>${Installer.image}</splash>
-        <!--<laf name="substance">-->
-            <!--<os family="windows" />-->
-            <!--<os family="unix" />-->
-            <!--<param name="variant" value="mist-silver" />-->
-        <!--</laf>-->
-        <!--<laf name="substance">-->
-            <!--<os family="mac" />-->
-            <!--<param name="variant" value="mist-aqua" />-->
-        <!--</laf>-->
-        <!--<modifier key="useHeadingPanel" value="yes" />-->
     </guiprefs>
 
     <locale>
-        <langpack iso3="eng"/>
-        <!--<langpack iso3="fra"/>-->
+        <!--<langpack iso3="eng"/>-->
+        <langpack iso3="fra"/>
     </locale>
 
     <natives>
@@ -71,7 +49,6 @@
     <panels>
         <panel classname="HTMLInfoPanel"    id="welcome"/>
         <panel classname="LicencePanel"     id="licence"/>
-        <!--<panel classname="PDFLicencePanel" id="licence" />-->
         <panel classname="TargetPanel"      id="install_dir" />
         <panel classname="TreePacksPanel"   id="tree_pack"/>
         <panel classname="InstallPanel"     id="install"/>

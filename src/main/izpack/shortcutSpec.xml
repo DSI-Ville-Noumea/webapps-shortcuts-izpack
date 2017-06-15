@@ -6,9 +6,9 @@
 
     <programGroup defaultName="Applications Mairie" location="startMenu"/>
     <shortcut name="Easy Vista"
-              target="C:\Program Files\Applications Mairie\Easy Vista\launch_ev.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Easy Vista"
-              iconFile="C:\Program Files\Applications Mairie\Easy Vista\icons\ev.ico"
+              target="$INSTALL_PATH/$Application.folder\Easy Vista\launch_ev.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Easy Vista"
+              iconFile="$INSTALL_PATH/$Application.folder\Easy Vista\icons\ev.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -18,9 +18,9 @@
         <createForPack name="Easy Vista"/>
     </shortcut>
     <shortcut name="Kiosque Rh"
-              target="C:\Program Files\Applications Mairie\Kiosque RH\launch_krh.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Kiosque RH"
-              iconFile="C:\Program Files\Applications Mairie\Kiosque RH\icons\kiosque_rh.ico"
+              target="$INSTALL_PATH/$Application.folder\Kiosque RH\launch_krh.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Kiosque RH"
+              iconFile="$INSTALL_PATH/$Application.folder\Kiosque RH\icons\kiosque_rh.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -30,9 +30,9 @@
         <createForPack name="Kiosque RH"/>
     </shortcut>
     <shortcut name="Web Intelligence"
-              target="C:\Program Files\Applications Mairie\Business Intelligence\launch_bi.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Business Intelligence"
-              iconFile="C:\Program Files\Applications Mairie\Business Intelligence\icons\webi.ico"
+              target="$INSTALL_PATH/$Application.folder\Business Intelligence\launch_bi.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Business Intelligence"
+              iconFile="$INSTALL_PATH/$Application.folder\Business Intelligence\icons\webi.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -42,9 +42,9 @@
         <createForPack name="Web Intelligence"/>
     </shortcut>
     <shortcut name="Intranet Mairie"
-              target="C:\Program Files\Applications Mairie\Portail\launch_portail.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Portail"
-              iconFile="C:\Program Files\Applications Mairie\Portail\icons\hypolite.ico"
+              target="$INSTALL_PATH/$Application.folder\Portail\launch_portail.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Portail"
+              iconFile="$INSTALL_PATH/$Application.folder\Portail\icons\hypolite.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -53,10 +53,10 @@
 
         <createForPack name="Portail Intranet"/>
     </shortcut>
-    <shortcut name="Plan Intéractif"
-              target="C:\Program Files\Applications Mairie\Plan Interactif\launch_plan_int.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Plan Interactif"
-              iconFile="C:\Program Files\Applications Mairie\Plan Interactif\icons\esri.ico"
+    <shortcut name="Plan Interactif"
+              target="$INSTALL_PATH/$Application.folder\Plan Interactif\launch_plan_int.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Plan Interactif"
+              iconFile="$INSTALL_PATH/$Application.folder\Plan Interactif\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -66,9 +66,9 @@
         <createForPack name="Plan Interactif"/>
     </shortcut>
     <shortcut name="Outlook Webmail"
-              target="C:\Program Files\Applications Mairie\Outlook Webmail\launch_webmail.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Outlook Webmail"
-              iconFile="C:\Program Files\Applications Mairie\Outlook Webmail\icons\webmail.ico"
+              target="$INSTALL_PATH/$Application.folder\Outlook Webmail\launch_webmail.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Outlook Webmail"
+              iconFile="$INSTALL_PATH/$Application.folder\Outlook Webmail\icons\webmail.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -78,9 +78,9 @@
         <createForPack name="Outlook Webmail"/>
     </shortcut>
     <shortcut name="Post-Office"
-              target="C:\Program Files\Applications Mairie\Post-Office\launch_po.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Post-Office"
-              iconFile="C:\Program Files\Applications Mairie\Post-Office\icons\po.ico"
+              target="$INSTALL_PATH/$Application.folder\Post-Office\launch_po.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Post-Office"
+              iconFile="$INSTALL_PATH/$Application.folder\Post-Office\icons\po.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -90,9 +90,9 @@
         <createForPack name="Outlook Webmail"/>
     </shortcut>
     <shortcut name="Astre GF"
-              target="C:\Program Files\Applications Mairie\Astre GF\launch_astre.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Astre GF"
-              iconFile="C:\Program Files\Applications Mairie\Astre GF\icons\astre.ico"
+              target="$INSTALL_PATH/$Application.folder\Astre GF\launch_astre.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Astre GF"
+              iconFile="$INSTALL_PATH/$Application.folder\Astre GF\icons\astre.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -102,9 +102,9 @@
         <createForPack name="Astre GF"/>
     </shortcut>
     <shortcut name="Blog Amicale"
-              target="C:\Program Files\Applications Mairie\Blog Amicale\launch_amicale.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Blog Amicale"
-              iconFile="C:\Program Files\Applications Mairie\Blog Amicale\icons\amicale.ico"
+              target="$INSTALL_PATH/$Application.folder\Blog Amicale\launch_amicale.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Blog Amicale"
+              iconFile="$INSTALL_PATH/$Application.folder\Blog Amicale\icons\amicale.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -114,9 +114,9 @@
         <createForPack name="Blog Amicale"/>
     </shortcut>
     <shortcut name="Allo! Mairie"
-              target="C:\Program Files\Applications Mairie\Allo Mairie\launch_allo_mairie.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Allo Mairie"
-              iconFile="C:\Program Files\Applications Mairie\Allo Mairie\icons\allo_mairie.ico"
+              target="$INSTALL_PATH/$Application.folder\Allo Mairie\launch_allo_mairie.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Allo Mairie"
+              iconFile="$INSTALL_PATH/$Application.folder\Allo Mairie\icons\allo_mairie.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -126,9 +126,9 @@
         <createForPack name="Allo! Mairie"/>
     </shortcut>
     <shortcut name="Deliberations"
-              target="C:\Program Files\Applications Mairie\Deliberations\launch_deliberations.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Deliberations"
-              iconFile="C:\Program Files\Applications Mairie\Deliberations\icons\mairie.ico"
+              target="$INSTALL_PATH/$Application.folder\Deliberations\launch_deliberations.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Deliberations"
+              iconFile="$INSTALL_PATH/$Application.folder\Deliberations\icons\mairie.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
@@ -138,9 +138,9 @@
         <createForPack name="Deliberations"/>
     </shortcut>
     <shortcut name="Ville de Noumea"
-              target="C:\Program Files\Applications Mairie\Ville Noumea\launch_ville_noumea.bat"
-              workingDirectory="C:\Program Files\Applications Mairie\Ville Noumea"
-              iconFile="C:\Program Files\Applications Mairie\Ville Noumea\icons\mairie.ico"
+              target="$INSTALL_PATH/$Application.folder\Ville Noumea\launch_ville_noumea.bat"
+              workingDirectory="$INSTALL_PATH/$Application.folder\Ville Noumea"
+              iconFile="$INSTALL_PATH/$Application.folder\Ville Noumea\icons\mairie.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
