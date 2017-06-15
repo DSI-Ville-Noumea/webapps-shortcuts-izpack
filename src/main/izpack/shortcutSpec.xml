@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <izpack:shortcuts version="5.0"
                   xmlns:izpack="http://izpack.org/schema/shortcuts"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -124,4 +125,29 @@
 
         <createForPack name="Allo! Mairie"/>
     </shortcut>
+    <shortcut name="Deliberations"
+              target="C:\Program Files\Applications Mairie\Deliberations\launch_deliberations.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Deliberations"
+              iconFile="C:\Program Files\Applications Mairie\Deliberations\icons\mairie.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Deliberations"/>
+    </shortcut>
+    <shortcut name="Ville de Noumea"
+              target="C:\Program Files\Applications Mairie\Ville Noumea\launch_ville_noumea.bat"
+              workingDirectory="C:\Program Files\Applications Mairie\Ville Noumea"
+              iconFile="C:\Program Files\Applications Mairie\Ville Noumea\icons\mairie.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Ville de Noumea"/>
+    </shortcut>
 </izpack:shortcuts>
+

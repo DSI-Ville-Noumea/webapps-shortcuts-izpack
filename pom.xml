@@ -18,8 +18,96 @@
         <maven-site-plugin.version>2.3</maven-site-plugin.version>
     </properties>
 
+    <dependencies>
+        <!--&lt;!&ndash; PDF Panel &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.pdfbox</groupId>-->
+            <!--<artifactId>pdfbox</artifactId>-->
+            <!--<version>2.0.6</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.icepdf.os</groupId>-->
+            <!--<artifactId>icepdf-core</artifactId>-->
+            <!--<version>6.2.2</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.icepdf.os</groupId>-->
+            <!--<artifactId>icepdf-viewer</artifactId>-->
+            <!--<version>6.2.2</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; PDF Panel &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>batik</groupId>-->
+            <!--<artifactId>batik-awt-util</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>batik</groupId>-->
+            <!--<artifactId>batik-dom</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>batik</groupId>-->
+            <!--<artifactId>batik-svg-dom</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>batik</groupId>-->
+            <!--<artifactId>batik-svggen</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>batik</groupId>-->
+            <!--<artifactId>batik-util</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>batik</groupId>-->
+            <!--<artifactId>batik-xml</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>commons-logging</groupId>-->
+            <!--<artifactId>commons-logging</artifactId>-->
+            <!--<version>1.2</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.pdfbox</groupId>-->
+            <!--<artifactId>fontbox</artifactId>-->
+            <!--<version>2.0.6</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.media</groupId>-->
+            <!--<artifactId>jai_codec</artifactId>-->
+            <!--<version>1.1.3</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.pdfbox</groupId>-->
+            <!--<artifactId>jempbox</artifactId>-->
+            <!--<version>1.8.13</version>-->
+        <!--</dependency>-->
+    </dependencies>
+
+
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>ice-maven-release</id>-->
+            <!--<name>Ice Maven Release Repository</name>-->
+            <!--<url>http://anonsvn.icesoft.org/repo/maven2/releases</url>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+    <!--<pluginRepositories>-->
+        <!--<pluginRepository>-->
+            <!--<id>ice-maven-release</id>-->
+            <!--<name>Ice Maven Release Repository</name>-->
+            <!--<url>http://anonsvn.icesoft.org/repo/maven2/releases</url>-->
+        <!--</pluginRepository>-->
+    <!--</pluginRepositories>-->
+
     <build>
         <defaultGoal>package</defaultGoal>
+
+
 
         <pluginManagement>
             <plugins>
@@ -27,6 +115,30 @@
                     <groupId>org.codehaus.izpack</groupId>
                     <artifactId>izpack-maven-plugin</artifactId>
                     <version>${izpack.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.codehaus.izpack</groupId>
+                            <artifactId>izpack-compiler</artifactId>
+                            <version>${izpack.version}</version>
+                        </dependency>
+                        <!--&lt;!&ndash; PDF Panel &ndash;&gt;-->
+                        <!--<dependency>-->
+                            <!--<groupId>org.apache.pdfbox</groupId>-->
+                            <!--<artifactId>pdfbox</artifactId>-->
+                            <!--<version>2.0.6</version>-->
+                        <!--</dependency>-->
+                        <!--<dependency>-->
+                            <!--<groupId>org.icepdf.os</groupId>-->
+                            <!--<artifactId>icepdf-core</artifactId>-->
+                            <!--<version>6.2.2</version>-->
+                        <!--</dependency>-->
+                        <!--<dependency>-->
+                            <!--<groupId>org.icepdf.os</groupId>-->
+                            <!--<artifactId>icepdf-viewer</artifactId>-->
+                            <!--<version>6.2.2</version>-->
+                        <!--</dependency>-->
+                        <!--&lt;!&ndash; PDF Panel &ndash;&gt;-->
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

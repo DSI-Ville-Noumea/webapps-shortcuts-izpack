@@ -12,7 +12,6 @@
     </info>
 
     <resources>
-        <res id="LicencePanel.licence" src="legal/License.txt"/>
         <res id="InfoPanel.info" src="doc/Readme.txt" parse="yes"/>
         <res id="HTMLHelloPanel.welcome" src="welcome.html"/>
         <res id="HTMLInfoPanel.welcome" src="welcome.html"/>
@@ -20,6 +19,8 @@
         <res id="Installer.image" src="images/DSI.png"/>
         <res id="TargetPanel.dir.unix" src="TargetDirUnix.txt"/>
         <res id="shortcutSpec.xml" src="shortcutSpec.xml" />
+        <res id="LicencePanel.licence" src="legal/License.txt"/>
+        <!--<res id="PDFLicencePanel.licence" src="legal/charte_dsi.pdf"/>-->
     </resources>
 
     <variables>
@@ -31,6 +32,15 @@
         <variable name="Application.name" value="Raccourcis Applications Mairie"/>
         <variable name="Application.shortname" value="webapps-shortcuts-izpack"/>
     </variables>
+
+    <!--<jar src="lib/batik-awt-util-1.7.jar" />-->
+    <!--<jar src="lib/batik-dom-1.7.jar" />-->
+    <!--<jar src="lib/batik-svg-dom-1.7.jar" />-->
+    <!--<jar src="lib/batik-svggen-1.7.jar" />-->
+    <!--<jar src="lib/batik-util-1.7.jar" />-->
+    <!--<jar src="lib/batik-xml-1.7.jar" />-->
+    <!--<jar src="lib/jai-codec-1.7.jar" />-->
+    <!--<jar src="lib/jai-core-1.7.jar" />-->
 
 
 
@@ -60,8 +70,9 @@
 
     <panels>
         <panel classname="HTMLInfoPanel"    id="welcome"/>
+        <panel classname="LicencePanel"     id="licence"/>
+        <!--<panel classname="PDFLicencePanel" id="licence" />-->
         <panel classname="TargetPanel"      id="install_dir" />
-        <!--<panel classname="PacksPanel"       id="sdk_pack_select"/>-->
         <panel classname="TreePacksPanel"   id="tree_pack"/>
         <panel classname="InstallPanel"     id="install"/>
         <panel classname="ShortcutPanel"    id="shortcuts"/>
@@ -70,6 +81,7 @@
     <packs>
         <pack name="Agent Mairie" preselected="yes" required="yes">
             <description>Ensemble des applications communes à tous les agents</description>
+            <file src="legal/License.txt" targetdir="$INSTALL_PATH/$Application.folder"/>
         </pack>
         <pack name="Portail Intranet" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Portail Intranet</description>
@@ -120,6 +132,16 @@
             <description>Blog de l'Amicale</description>
             <file src="common_agent/allo_mairie/allo_mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Allo Mairie/icons"/>
             <file src="common_agent/allo_mairie/launch_allo_mairie.bat"           targetdir="$INSTALL_PATH/$Application.folder/Allo Mairie"/>
+        </pack>
+        <pack name="Deliberations" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Délibérations du Conseil Municipal</description>
+            <file src="common_agent/deliberations/mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Deliberations/icons"/>
+            <file src="common_agent/deliberations/launch_deliberations.bat"           targetdir="$INSTALL_PATH/$Application.folder/Deliberations"/>
+        </pack>
+        <pack name="Ville de Noumea" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Site web de la Ville de Nouméa</description>
+            <file src="common_agent/ville_noumea/mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Ville Noumea/icons"/>
+            <file src="common_agent/ville_noumea/launch_ville_noumea.bat"           targetdir="$INSTALL_PATH/$Application.folder/Ville Noumea"/>
         </pack>
     </packs>
 
