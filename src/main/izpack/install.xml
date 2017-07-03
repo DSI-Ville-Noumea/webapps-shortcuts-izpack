@@ -58,67 +58,81 @@
     <packs>
         <pack name="Agent Mairie" preselected="yes" required="yes">
             <description>Ensemble des applications communes à tous les agents</description>
-            <file src="legal/License.txt" targetdir="$INSTALL_PATH/$Application.folder"/>
+            <file src="legal/License.txt" targetdir="$INSTALL_PATH"/>
         </pack>
         <pack name="Portail Intranet" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Portail Intranet</description>
-            <file src="common_agent/portail/hypolite.ico"            targetdir="$INSTALL_PATH/$Application.folder/Portail/icons"/>
-            <file src="common_agent/portail/launch_portail.bat"      targetdir="$INSTALL_PATH/$Application.folder/Portail"/>
+            <file src="common_agent/portail/hypolite.ico"            targetdir="$INSTALL_PATH/Portail/icons"/>
+            <file src="common_agent/portail/launch_portail.bat"      targetdir="$INSTALL_PATH/Portail"/>
         </pack>
         <pack name="Easy Vista" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Easy Vista</description>
-            <file src="common_agent/easy_vista/ev.ico"          targetdir="$INSTALL_PATH/$Application.folder/Easy Vista/icons"/>
-            <file src="common_agent/easy_vista/launch_ev.bat"   targetdir="$INSTALL_PATH/$Application.folder/Easy Vista"/>
+            <file src="common_agent/easy_vista/ev.ico"          targetdir="$INSTALL_PATH/Easy Vista/icons"/>
+            <file src="common_agent/easy_vista/launch_ev.bat"   targetdir="$INSTALL_PATH/Easy Vista"/>
         </pack>
         <pack name="Kiosque RH" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Kiosque RH</description>
-            <file src="common_agent/kiosque_rh/kiosque_rh.ico"  targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH/icons"/>
-            <file src="common_agent/kiosque_rh/launch_krh.bat"  targetdir="$INSTALL_PATH/$Application.folder/Kiosque RH"/>
+            <file src="common_agent/kiosque_rh/kiosque_rh.ico"  targetdir="$INSTALL_PATH/Kiosque RH/icons"/>
+            <file src="common_agent/kiosque_rh/launch_krh.bat"  targetdir="$INSTALL_PATH/Kiosque RH"/>
         </pack>
         <pack name="Web Intelligence" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Web Intelligence</description>
-            <file src="common_agent/bi/webi.ico"                targetdir="$INSTALL_PATH/$Application.folder/Business Intelligence/icons"/>
-            <file src="common_agent/bi/launch_bi.bat"           targetdir="$INSTALL_PATH/$Application.folder/Business Intelligence"/>
+            <file src="common_agent/bi/webi.ico"                targetdir="$INSTALL_PATH/Business Intelligence/icons"/>
+            <file src="common_agent/bi/launch_bi.bat"           targetdir="$INSTALL_PATH/Business Intelligence"/>
         </pack>
         <pack name="Plan Interactif" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Plan Intéractif de la ville</description>
-            <file src="common_agent/plan_interactif/esri.ico"                targetdir="$INSTALL_PATH/$Application.folder/Plan Interactif/icons"/>
-            <file src="common_agent/plan_interactif/launch_plan_int.bat"     targetdir="$INSTALL_PATH/$Application.folder/Plan Interactif"/>
+            <file src="common_agent/plan_interactif/esri.ico"                targetdir="$INSTALL_PATH/Plan Interactif/icons"/>
+            <file src="common_agent/plan_interactif/launch_plan_int.bat"     targetdir="$INSTALL_PATH/Plan Interactif"/>
         </pack>
         <pack name="Outlook Webmail" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Outlook Webmail</description>
-            <file src="common_agent/webmail/webmail.ico"                targetdir="$INSTALL_PATH/$Application.folder/Outlook Webmail/icons"/>
-            <file src="common_agent/webmail/launch_webmail.bat"           targetdir="$INSTALL_PATH/$Application.folder/Outlook Webmail"/>
+            <file src="common_agent/webmail/webmail.ico"                targetdir="$INSTALL_PATH/Outlook Webmail/icons"/>
+            <file src="common_agent/webmail/launch_webmail.bat"           targetdir="$INSTALL_PATH/Outlook Webmail"/>
         </pack>
         <pack name="Post-Office" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Outlook Webmail</description>
-            <file src="common_agent/post_office/po.ico"                targetdir="$INSTALL_PATH/$Application.folder/Post-Office/icons"/>
-            <file src="common_agent/post_office/launch_po.bat"           targetdir="$INSTALL_PATH/$Application.folder/Post-Office"/>
+            <file src="common_agent/post_office/po.ico"                targetdir="$INSTALL_PATH/Post-Office/icons"/>
+            <file src="common_agent/post_office/launch_po.bat"           targetdir="$INSTALL_PATH/Post-Office"/>
         </pack>
         <pack name="Astre GF" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Astre GF</description>
-            <file src="common_agent/astre/astre.ico"                targetdir="$INSTALL_PATH/$Application.folder/Astre GF/icons"/>
-            <file src="common_agent/astre/launch_astre.bat"           targetdir="$INSTALL_PATH/$Application.folder/Astre GF"/>
+            <file src="common_agent/astre/astre.ico"                targetdir="$INSTALL_PATH/Astre GF/icons"/>
+            <file src="common_agent/astre/launch_astre.bat"           targetdir="$INSTALL_PATH/Astre GF"/>
         </pack>
         <pack name="Blog Amicale" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Blog de l'Amicale</description>
-            <file src="common_agent/amicale/amicale.ico"                targetdir="$INSTALL_PATH/$Application.folder/Blog Amicale/icons"/>
-            <file src="common_agent/amicale/launch_amicale.bat"           targetdir="$INSTALL_PATH/$Application.folder/Blog Amicale"/>
+            <file src="common_agent/amicale/amicale.ico"                targetdir="$INSTALL_PATH/Blog Amicale/icons"/>
+            <file src="common_agent/amicale/launch_amicale.bat"           targetdir="$INSTALL_PATH/Blog Amicale"/>
         </pack>
         <pack name="Allo! Mairie" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Blog de l'Amicale</description>
-            <file src="common_agent/allo_mairie/allo_mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Allo Mairie/icons"/>
-            <file src="common_agent/allo_mairie/launch_allo_mairie.bat"           targetdir="$INSTALL_PATH/$Application.folder/Allo Mairie"/>
+            <file src="common_agent/allo_mairie/allo_mairie.ico"                targetdir="$INSTALL_PATH/Allo Mairie/icons"/>
+            <file src="common_agent/allo_mairie/launch_allo_mairie.bat"           targetdir="$INSTALL_PATH/Allo Mairie"/>
         </pack>
         <pack name="Deliberations" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Délibérations du Conseil Municipal</description>
-            <file src="common_agent/deliberations/mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Deliberations/icons"/>
-            <file src="common_agent/deliberations/launch_deliberations.bat"           targetdir="$INSTALL_PATH/$Application.folder/Deliberations"/>
+            <file src="common_agent/deliberations/mairie.ico"                targetdir="$INSTALL_PATH/Deliberations/icons"/>
+            <file src="common_agent/deliberations/launch_deliberations.bat"           targetdir="$INSTALL_PATH/Deliberations"/>
         </pack>
         <pack name="Ville de Noumea" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Site web de la Ville de Nouméa</description>
-            <file src="common_agent/ville_noumea/mairie.ico"                targetdir="$INSTALL_PATH/$Application.folder/Ville Noumea/icons"/>
-            <file src="common_agent/ville_noumea/launch_ville_noumea.bat"           targetdir="$INSTALL_PATH/$Application.folder/Ville Noumea"/>
+            <file src="common_agent/ville_noumea/mairie.ico"                targetdir="$INSTALL_PATH/Ville Noumea/icons"/>
+            <file src="common_agent/ville_noumea/launch_ville_noumea.bat"           targetdir="$INSTALL_PATH/Ville Noumea"/>
+        </pack>
+
+        <pack name="Agent DPM" preselected="no" required="no">
+            <description>Ensemble des applications de la Direction de la Police Municipale</description>
+        </pack>
+        <pack name="Main courante" preselected="no" required="no" parent="Agent DPM">
+            <description>Site web de la Ville de Nouméa</description>
+            <file src="dpm/dpmmc/dpmmc.ico"                targetdir="$INSTALL_PATH/DPMMC/icons"/>
+            <file src="dpm/dpmmc/launch_dpmmc.bat"           targetdir="$INSTALL_PATH/DPMMC"/>
+        </pack>
+        <pack name="DPM Geoloc" preselected="no" required="no" parent="Agent DPM">
+            <description>Site web de la Ville de Nouméa</description>
+            <file src="dpm/geoloc/geoloc.ico"                targetdir="$INSTALL_PATH/Geoloc/icons"/>
+            <file src="dpm/geoloc/launch_geoloc.bat"           targetdir="$INSTALL_PATH/Geoloc"/>
         </pack>
     </packs>
 
