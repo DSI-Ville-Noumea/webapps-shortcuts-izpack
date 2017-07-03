@@ -134,6 +134,17 @@
             <file src="dpm/geoloc/geoloc.ico"                targetdir="$INSTALL_PATH/Geoloc/icons"/>
             <file src="dpm/geoloc/launch_geoloc.bat"           targetdir="$INSTALL_PATH/Geoloc"/>
         </pack>
+
+
+        <pack name="Agent SGAU" preselected="no" required="no">
+            <description>Ensemble des applications du SGAU</description>
+        </pack>
+        <pack name="Permis de Construire" preselected="no" required="no" parent="Agent SGAU">
+            <description>Site web de la Ville de Nouméa</description>
+            <file src="pdc/pdc.ico"                targetdir="$INSTALL_PATH/Permis Construire/icons"/>
+            <file src="pdc/launch_pdc.bat"           targetdir="$INSTALL_PATH/Permis Construire"/>
+        </pack>
+
     </packs>
 
 

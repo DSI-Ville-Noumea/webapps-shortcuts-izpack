@@ -163,7 +163,6 @@
 
         <createForPack name="Main courante"/>
     </shortcut>
-
     <shortcut name="Geoloc"
               target="$INSTALL_PATH/Geoloc\launch_geoloc.bat"
               workingDirectory="$INSTALL_PATH/Geoloc"
@@ -175,6 +174,20 @@
               startMenu="yes">
 
         <createForPack name="DPM Geoloc"/>
+    </shortcut>
+
+    <!-- PACK PDC -->
+    <shortcut name="Pdc"
+              target="$INSTALL_PATH/Permis Construire\launch_pdc.bat"
+              workingDirectory="$INSTALL_PATH/Permis Construire"
+              iconFile="$INSTALL_PATH/Permis Construire\icons\pdc.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Permis de Construire"/>
     </shortcut>
 </izpack:shortcuts>
 
