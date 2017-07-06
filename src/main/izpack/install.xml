@@ -32,6 +32,8 @@
         <variable name="Application.shortname" value="webapps-shortcuts-izpack"/>
     </variables>
 
+    <run-privileged/>
+
     <guiprefs width="800" height="600" resizable="no">
         <splash>${Installer.image}</splash>
     </guiprefs>
@@ -57,28 +59,28 @@
     </panels>
     <packs>
         <pack name="Agent Mairie" preselected="yes" required="yes">
-            <description>Ensemble des applications communes à tous les agents</description>
+            <description>Ensemble des applications communes à tous les agents de la Ville de Nouméa</description>
             <file src="legal/License.txt" targetdir="$INSTALL_PATH"/>
         </pack>
         <pack name="Portail Intranet" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Portail Intranet</description>
+            <description>Portail Intranet de la Ville de Nouméa</description>
             <file src="common_agent/portail/hypolite.ico"            targetdir="$INSTALL_PATH/Portail/icons"/>
             <file src="common_agent/portail/launch_portail.bat"      targetdir="$INSTALL_PATH/Portail"/>
         </pack>
         <pack name="Easy Vista" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Easy Vista</description>
+            <description>Logiciel permettant le suivi de l'activité des services d'assistance : demande de services, déclaration de problèmes ou d'incidents.</description>
             <file src="common_agent/easy_vista/ev.ico"          targetdir="$INSTALL_PATH/Easy Vista/icons"/>
             <file src="common_agent/easy_vista/launch_ev.bat"   targetdir="$INSTALL_PATH/Easy Vista"/>
         </pack>
         <pack name="Kiosque RH" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Kiosque RH</description>
+            <description>Application de gestion des Ressources Humaines : EAE, demandes de congés, pointages, titres repas, informations personnelles de l'agent. </description>
             <file src="common_agent/kiosque_rh/kiosque_rh.ico"  targetdir="$INSTALL_PATH/Kiosque RH/icons"/>
             <file src="common_agent/kiosque_rh/launch_krh.bat"  targetdir="$INSTALL_PATH/Kiosque RH"/>
         </pack>
-        <pack name="Web Intelligence" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Web Intelligence</description>
-            <file src="common_agent/bi/webi.ico"                targetdir="$INSTALL_PATH/Business Intelligence/icons"/>
-            <file src="common_agent/bi/launch_bi.bat"           targetdir="$INSTALL_PATH/Business Intelligence"/>
+        <pack name="WebI" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Application permettant aux utilisateurs, à travers des environnements prédéfinis, de créer leur rapport et tableaux de bord de façon autonome.</description>
+            <file src="common_agent/bi/webi.ico"                targetdir="$INSTALL_PATH/WebI/icons"/>
+            <file src="common_agent/bi/launch_bi.bat"           targetdir="$INSTALL_PATH/WebI"/>
         </pack>
         <pack name="Plan Interactif" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Plan Intéractif de la ville</description>
@@ -86,27 +88,27 @@
             <file src="common_agent/plan_interactif/launch_plan_int.bat"     targetdir="$INSTALL_PATH/Plan Interactif"/>
         </pack>
         <pack name="Outlook Webmail" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Outlook Webmail</description>
+            <description>Webmail Outlook</description>
             <file src="common_agent/webmail/webmail.ico"                targetdir="$INSTALL_PATH/Outlook Webmail/icons"/>
             <file src="common_agent/webmail/launch_webmail.bat"           targetdir="$INSTALL_PATH/Outlook Webmail"/>
         </pack>
         <pack name="Post-Office" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Outlook Webmail</description>
+            <description>Application de gestion du courrier de la Mairie de Nouméa (AVP, Notes de services, etc...)</description>
             <file src="common_agent/post_office/po.ico"                targetdir="$INSTALL_PATH/Post-Office/icons"/>
             <file src="common_agent/post_office/launch_po.bat"           targetdir="$INSTALL_PATH/Post-Office"/>
         </pack>
         <pack name="Astre GF" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Astre GF</description>
+            <description>Progiciel de gestion de la comptabilité de la Ville de Nouméa.</description>
             <file src="common_agent/astre/astre.ico"                targetdir="$INSTALL_PATH/Astre GF/icons"/>
             <file src="common_agent/astre/launch_astre.bat"           targetdir="$INSTALL_PATH/Astre GF"/>
         </pack>
         <pack name="Blog Amicale" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Blog de l'Amicale</description>
+            <description>Blog de l'Amicale des agents de la Ville de Nouméa</description>
             <file src="common_agent/amicale/amicale.ico"                targetdir="$INSTALL_PATH/Blog Amicale/icons"/>
             <file src="common_agent/amicale/launch_amicale.bat"           targetdir="$INSTALL_PATH/Blog Amicale"/>
         </pack>
         <pack name="Allo! Mairie" preselected="yes" required="yes" parent="Agent Mairie">
-            <description>Blog de l'Amicale</description>
+            <description>Application de demande d'intervention technique sur le domaine public.</description>
             <file src="common_agent/allo_mairie/allo_mairie.ico"                targetdir="$INSTALL_PATH/Allo Mairie/icons"/>
             <file src="common_agent/allo_mairie/launch_allo_mairie.bat"           targetdir="$INSTALL_PATH/Allo Mairie"/>
         </pack>
@@ -125,24 +127,59 @@
             <description>Ensemble des applications de la Direction de la Police Municipale</description>
         </pack>
         <pack name="Main courante" preselected="no" required="no" parent="Agent DPM">
-            <description>Site web de la Ville de Nouméa</description>
+            <description>Outil de gestion de la main courante de la Police Municipale de la Ville de Nouméa</description>
             <file src="dpm/dpmmc/dpmmc.ico"                targetdir="$INSTALL_PATH/DPMMC/icons"/>
-            <file src="dpm/dpmmc/launch_dpmmc.bat"           targetdir="$INSTALL_PATH/DPMMC"/>
+            <file src="dpm/dpmmc/launch_dpmmc.bat"         targetdir="$INSTALL_PATH/DPMMC"/>
         </pack>
         <pack name="DPM Geoloc" preselected="no" required="no" parent="Agent DPM">
-            <description>Site web de la Ville de Nouméa</description>
+            <description>Application de géolocalisation des véhicules de la Police Municipale de la Ville de Nouméa</description>
             <file src="dpm/geoloc/geoloc.ico"                targetdir="$INSTALL_PATH/Geoloc/icons"/>
-            <file src="dpm/geoloc/launch_geoloc.bat"           targetdir="$INSTALL_PATH/Geoloc"/>
+            <file src="dpm/geoloc/launch_geoloc.bat"         targetdir="$INSTALL_PATH/Geoloc"/>
         </pack>
 
-
+        <!-- Pack Agent SGAU -->
         <pack name="Agent SGAU" preselected="no" required="no">
             <description>Ensemble des applications du SGAU</description>
         </pack>
         <pack name="Permis de Construire" preselected="no" required="no" parent="Agent SGAU">
-            <description>Site web de la Ville de Nouméa</description>
+            <description>Application de gestion des permis de construire de la Ville de Nouméa</description>
             <file src="pdc/pdc.ico"                targetdir="$INSTALL_PATH/Permis Construire/icons"/>
-            <file src="pdc/launch_pdc.bat"           targetdir="$INSTALL_PATH/Permis Construire"/>
+            <file src="pdc/launch_pdc.bat"         targetdir="$INSTALL_PATH/Permis Construire"/>
+        </pack>
+
+        <!-- Pack Agent SIG -->
+        <pack name="Agent SIG" preselected="no" required="no">
+            <description>Ensemble des applications du SIG</description>
+        </pack>
+        <pack name="Administratif et Equipements" preselected="no" required="no" parent="Agent SIG">
+            <description></description>
+            <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Administratif et Equipements/icons"/>
+            <file src="sig/admin_equipt/launch_adm_eqpt.bat"         targetdir="$INSTALL_PATH/Administratif et Equipements"/>
+        </pack>
+        <pack name="Foncier" preselected="no" required="no" parent="Agent SIG">
+            <description></description>
+            <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Foncier/icons"/>
+            <file src="sig/foncier/launch_foncier.bat"         targetdir="$INSTALL_PATH/Foncier"/>
+        </pack>
+        <pack name="PUD" preselected="no" required="no" parent="Agent SIG">
+            <description></description>
+            <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/PUD/icons"/>
+            <file src="sig/pud/launch_pud.bat"         targetdir="$INSTALL_PATH/PUD"/>
+        </pack>
+        <pack name="Serail" preselected="no" required="no" parent="Agent SIG">
+            <description></description>
+            <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Serail/icons"/>
+            <file src="sig/serail/launch_serail.bat"         targetdir="$INSTALL_PATH/Serail"/>
+        </pack>
+        <pack name="Securite civile" preselected="no" required="no" parent="Agent SIG">
+            <description></description>
+            <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Securite civile/icons"/>
+            <file src="sig/secu_civile/launch_secu_civile.bat"         targetdir="$INSTALL_PATH/Securite civile"/>
+        </pack>
+        <pack name="Securite civile et Risques naturels" preselected="no" required="no" parent="Agent SIG">
+            <description></description>
+            <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Risques naturels/icons"/>
+            <file src="sig/risques_nat/launch_risques_nat.bat"         targetdir="$INSTALL_PATH/Risques naturels"/>
         </pack>
 
     </packs>

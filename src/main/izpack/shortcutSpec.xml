@@ -30,16 +30,16 @@
         <createForPack name="Kiosque RH"/>
     </shortcut>
     <shortcut name="Web Intelligence"
-              target="$INSTALL_PATH/Business Intelligence\launch_bi.bat"
-              workingDirectory="$INSTALL_PATH/Business Intelligence"
-              iconFile="$INSTALL_PATH/Business Intelligence\icons\webi.ico"
+              target="$INSTALL_PATH/WebI\launch_bi.bat"
+              workingDirectory="$INSTALL_PATH/WebI"
+              iconFile="$INSTALL_PATH/WebI\icons\webi.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="Web Intelligence"/>
+        <createForPack name="WebI"/>
     </shortcut>
     <shortcut name="Intranet Mairie"
               target="$INSTALL_PATH/Portail\launch_portail.bat"
@@ -189,5 +189,80 @@
 
         <createForPack name="Permis de Construire"/>
     </shortcut>
+
+    <!-- PACK SIG -->
+    <shortcut name="Administratif et Equipements"
+              target="$INSTALL_PATH/Administratif et Equipements\launch_adm_eqpt.bat"
+              workingDirectory="$INSTALL_PATH/Administratif et Equipements"
+              iconFile="$INSTALL_PATH/Administratif et Equipements\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Administratif et Equipements"/>
+    </shortcut>
+    <shortcut name="Foncier"
+              target="$INSTALL_PATH/Foncier\launch_foncier.bat"
+              workingDirectory="$INSTALL_PATH/Foncier"
+              iconFile="$INSTALL_PATH/Foncier\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Foncier"/>
+    </shortcut>
+    <shortcut name="PUD"
+              target="$INSTALL_PATH/PUD\launch_pud.bat"
+              workingDirectory="$INSTALL_PATH/PUD"
+              iconFile="$INSTALL_PATH/PUD\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="PUD"/>
+    </shortcut>
+    <shortcut name="Serail"
+              target="$INSTALL_PATH/Serail\launch_serail.bat"
+              workingDirectory="$INSTALL_PATH/Serail"
+              iconFile="$INSTALL_PATH/Serail\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Serail"/>
+    </shortcut>
+    <shortcut name="Securite civile"
+              target="$INSTALL_PATH/Securite civile\launch_secu_civile.bat"
+              workingDirectory="$INSTALL_PATH/Securite civile"
+              iconFile="$INSTALL_PATH/Securite civile\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Securite civile"/>
+    </shortcut>
+    <shortcut name="Securite civile et Risques naturels"
+              target="$INSTALL_PATH/Risques naturels\launch_risque_nat.bat"
+              workingDirectory="$INSTALL_PATH/Risques naturels"
+              iconFile="$INSTALL_PATH/Risques naturels\icons\esri.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Securite civile et Risques naturels"/>
+    </shortcut>
+
 </izpack:shortcuts>
 

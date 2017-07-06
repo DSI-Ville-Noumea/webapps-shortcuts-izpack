@@ -14,6 +14,7 @@ d’instaurer un usage correct des ressources informatiques et des services Inte
 suivant des règles minimales de courtoisie et de respect d’autrui.
 
 1. Définitions
+
 L’information se présente sous trois formes : les données, les connaissances et les messages. On a l’habitude de
 désigner par Système d’Information, l’ensemble des moyens techniques et humains qui permettent de stocker, de
 traiter ou de transmettre l’information. De fait, on peut confondre, la notion de systèmes et réseaux informatiques et
@@ -29,8 +30,10 @@ On désignera sous le terme « utilisateur » toutes les personnes ayant accès 
 utilisant les ressources informatiques et les services Internet de la Ville de Nouméa.
 On désignera sous le terme « compte » le moyen d’accès (nom d’utilisateur, mot de passe) qui permet à un
 utilisateur de se connecter aux ressources informatiques et aux services Internet de la Ville de Nouméa.
+
 2. Accès aux ressources informatiques, aux services Internet et aux informations de la Ville de
 Nouméa
+
 L’usage des ressources informatiques et des services Internet ainsi que les informations auxquels il a accès, est
 réservé au cadre de l’activité professionnelle de l’utilisateur.
 L’activité professionnelle représente toute l’activité administrative, technique et de gestion effectuée dans le cadre
@@ -40,7 +43,9 @@ ne peuvent en aucun cas être cédées, même temporairement, à un tiers.
 Ces autorisations peuvent être retirées à tout moment par l’autorité municipale. Toute autorisation prend fin lors de la
 cessation même provisoire de l’activité professionnelle qui l’a justifiée. Il pourra en outre être prévu des restrictions
 d’accès spécifiques à son activité (cartes, badges ...).
+
 3. Règles d’utilisation, de sécurité et de bon usage
+
 Tout utilisateur est responsable de l’usage des informations, des ressources informatiques et des services Internet
 auxquels il a accès. Il a aussi la responsabilité, à son niveau, de contribuer à la sécurité générale et aussi à celle de
 son service ou de sa Direction. L’utilisation de ces ressources doit être rationnelle et loyale afin d’en éviter la
@@ -65,7 +70,9 @@ propre ou dont il est responsable, directement ou indirectement.
 En particulier, il ne doit pas modifier le ou les fichiers contenant des informations comptables ou d’identification ;
 – il ne doit pas quitter son poste de travail ni ceux en libre-service sans se déconnecter en laissant des ressources
 ou des services accessibles.
+
 4. Conditions de confidentialité des informations
+
 L’accès par les utilisateurs, aux informations et aux documents traités et conservés par le Système d’Information de
 la Ville de Nouméa, doit être limité à ceux qui leur sont propres, et ceux qui sont publics ou partagés. En particulier, il
 est interdit de prendre connaissance d’informations détenues par d’autres utilisateurs, quand bien même ceux-ci ne
@@ -93,11 +100,15 @@ Si, dans l’accomplissement de son travail, l’utilisateur est amené à const
 loi Informatique et Libertés, il devra auparavant en avoir fait la demande auprès de la Direction des Systèmes
 d’Information et en avoir reçu l’autorisation. Il est rappelé que cette autorisation n’est valable que pour le traitement
 défini dans la demande et pas pour le fichier lui-même.
+
 5. Respect de la législation concernant les logiciels
+
 Il est strictement interdit d’effectuer des copies de logiciels commerciaux pour quelqu’usage que ce soit. Par ailleurs
 l’utilisateur ne doit pas installer de logiciels (à caractère ludique notamment), ni contourner les restrictions d’utilisation
 d’un logiciel sauf autorisation de la Direction des Systèmes d’Information.
+
 6. Préservation de l’intégrité des systèmes informatiques et respect des procédures
+
 L’utilisateur s’engage à ne pas apporter de perturbation au bon fonctionnement des systèmes informatiques et des
 réseaux que ce soit notamment par des manipulations anormales du matériel, ou par l’introduction de logiciels
 parasites connus sous le nom générique de virus, chevaux de Troie, bombes logiques... Tout travail risquant de
@@ -105,7 +116,9 @@ conduire à la violation de la présente règle ne pourra être accompli qu’av
 la Direction des Systèmes d’Information et dans le strict respect des règles qui auront alors été définies.
 Chaque utilisateur s’engage à respecter les procédures de protection des technologies de l’information définies dans
 le guide de sécurité du Système d’Information de la Ville de Nouméa.
+
 7. Usage des services Internet (web, messagerie, Forums, Chat, ftp, ...)
+
 L’utilisateur doit faire usage des services Internet dans le cadre de ses activités professionnelles et dans le respect
 de principes généraux et des règles propres aux divers sites qui les proposent ainsi que dans le respect de la
 législation en vigueur.
@@ -133,7 +146,9 @@ messagerie et de garantir aux destinataires des messages, un temps de téléchar
 pornographique, diffamatoire.
 La Ville de Nouméa ne pourra être tenue pour responsable des détériorations d’informations ou des infractions
 commises par un utilisateur qui ne se sera pas conformé à ces règles.
+
 8. Analyse et contrôle de l’utilisation des ressources
+
 Pour des nécessités de maintenance et de gestion technique, l’utilisation des ressources matérielles ou logicielles
 ainsi que les échanges via le réseau peuvent être analysés et contrôlés dans le respect de la législation applicable et
 notamment de la loi Informatique et Libertés.
@@ -154,7 +169,9 @@ caractère professionnel, sauf s’il est identifié comme étant « personnel �
 30 mai 2007).
 Il appartient donc à chaque utilisateur d’identifier les messages qui sont personnels. A défaut d’une telle
 identification, les messages sont présumés être professionnels.
+
 9. Rappel des principales lois applicables en Nouvelle-Calédonie
+
 Il est rappelé que toute personne doit respecter la législation en vigueur en Nouvelle-Calédonie et en particulier dans
 le domaine de la sécurité informatique :
 – la loi du 6/1/78 dite « Informatique et Liberté »,
@@ -162,7 +179,9 @@ le domaine de la sécurité informatique :
 à 226-24, articles 323-1 et 323-7, articles 462-2 à 462-9),
 – la législation relative à la propriété intellectuelle dans ses dispositions applicables en Nouvelle-Calédonie,
 – la loi du 04/08/1994 relative à l’emploi de la langue française.
+
 10. Application
+
 La présente charte s’applique à l’ensemble des utilisateurs de la Ville de Nouméa et des établissements publics tous
 statuts confondus, et plus généralement à l’ensemble des personnels, permanents ou temporaires, utilisant les
 moyens informatiques communaux ainsi que ceux auxquels il est possible d’accéder à distance directement ou en
@@ -171,7 +190,9 @@ Elle sera diffusée à l'ensemble du personnel municipal et annexée, à titre d
 conclus avec les agents contractuels qui auront accès au système informatique de leur entité et mise à disposition
 sur l’Intranet de la Mairie.
 Elle sera en outre signée par toutes personnes accueillies à la Ville et ayant accès au dit système.
+
 11. Responsabilité et sanctions
+
 Dans le cas où un utilisateur ne respecterait pas la présente charte, sa responsabilité pourrait être engagée, et la
 Ville de Nouméa pourrait engager des mesures disciplinaires qui pourraient aller jusqu’au licenciement pour faute
 grave. Ces mesures internes pourraient être associées à des poursuites légales dans le respect de la législation
