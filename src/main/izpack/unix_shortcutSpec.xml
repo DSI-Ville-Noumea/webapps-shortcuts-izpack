@@ -6,115 +6,124 @@
 
     <programGroup defaultName="Applications Mairie" location="startMenu"/>
     <shortcut name="Easy Vista"
-              target="$INSTALL_PATH/Easy Vista\launch_ev.${script.ext}"
+              target="firefox https://easyvista.ville-noumea.nc"
               workingDirectory="$INSTALL_PATH/Easy Vista"
               iconFile="$INSTALL_PATH/Easy Vista\icons\ev.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Easy Vista"/>
     </shortcut>
     <shortcut name="Kiosque Rh"
-              target="$INSTALL_PATH/Kiosque RH\launch_krh.${script.ext}"
+              target="firefox https://kiosque-rh"
               workingDirectory="$INSTALL_PATH/Kiosque RH"
               iconFile="$INSTALL_PATH/Kiosque RH\icons\kiosque_rh.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Kiosque RH"/>
     </shortcut>
     <shortcut name="Web Intelligence"
-              target="$INSTALL_PATH/WebI\launch_bi.${script.ext}"
+              target="firefox https://svpbo0:8080/BOE/BI"
               workingDirectory="$INSTALL_PATH/WebI"
               iconFile="$INSTALL_PATH/WebI\icons\webi.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="WebI"/>
     </shortcut>
     <shortcut name="Intranet Mairie"
-              target="$INSTALL_PATH/Portail\launch_portail.${script.ext}"
+              target="firefox https://portail.site-mairie.noumea.nc/"
               workingDirectory="$INSTALL_PATH/Portail"
               iconFile="$INSTALL_PATH/Portail\icons\hypolite.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Portail Intranet"/>
     </shortcut>
     <shortcut name="Plan Interactif"
-              target="$INSTALL_PATH/Plan Interactif\launch_plan_int.${script.ext}"
+              target="firefox http://carto.noumea.nc/portail/?center=446177%2C214128&amp;scale=10000&amp;"
               workingDirectory="$INSTALL_PATH/Plan Interactif"
               iconFile="$INSTALL_PATH/Plan Interactif\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Plan Interactif"/>
     </shortcut>
     <shortcut name="Outlook Webmail"
-              target="$INSTALL_PATH/Outlook Webmail\launch_webmail.${script.ext}"
+              target="firefox https://webmail.ville-noumea.nc/owa/"
               workingDirectory="$INSTALL_PATH/Outlook Webmail"
               iconFile="$INSTALL_PATH/Outlook Webmail\icons\webmail.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Outlook Webmail"/>
     </shortcut>
     <shortcut name="Post-Office"
-              target="$INSTALL_PATH/Post-Office\launch_po.${script.ext}"
+              target="firefox https://postoffice/"
               workingDirectory="$INSTALL_PATH/Post-Office"
               iconFile="$INSTALL_PATH/Post-Office\icons\po.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Outlook Webmail"/>
     </shortcut>
     <shortcut name="Astre GF"
-              target="$INSTALL_PATH/Astre GF\launch_astre.${script.ext}"
+              target="firefox https://astre.ville-noumea.nc/astre/gf/EcrAccueil.jsp"
               workingDirectory="$INSTALL_PATH/Astre GF"
               iconFile="$INSTALL_PATH/Astre GF\icons\astre.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Astre GF"/>
     </shortcut>
     <shortcut name="Blog Amicale"
-              target="$INSTALL_PATH/Blog Amicale\launch_amicale.${script.ext}"
+              target="firefox http://svpsp/blogs/amicale/default.aspx"
               workingDirectory="$INSTALL_PATH/Blog Amicale"
               iconFile="$INSTALL_PATH/Blog Amicale\icons\amicale.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Blog Amicale"/>
     </shortcut>
     <shortcut name="Allo! Mairie"
-              target="$INSTALL_PATH/Allo Mairie\launch_allo_mairie.${script.ext}"
+              target="firefox http://eatalsaisieinternet/EAtalServlet"
               workingDirectory="$INSTALL_PATH/Allo Mairie"
               iconFile="$INSTALL_PATH/Allo Mairie\icons\allo_mairie.ico"
               startup="no"
@@ -122,146 +131,156 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              encoding="UTF-8"
               type="Application">
 
         <createForPack name="Allo! Mairie"/>
     </shortcut>
     <shortcut name="Deliberations"
-              target="$INSTALL_PATH/Deliberations\launch_deliberations.${script.ext}"
+              target="firefox http://intranet:85/conseils/accueil.html"
               workingDirectory="$INSTALL_PATH/Deliberations"
               iconFile="$INSTALL_PATH/Deliberations\icons\mairie.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Deliberations"/>
     </shortcut>
     <shortcut name="Ville de Noumea"
-              target="$INSTALL_PATH/Ville Noumea\launch_ville_noumea.${script.ext}"
+              target="firefox http://www.noumea.nc/"
               workingDirectory="$INSTALL_PATH/Ville Noumea"
               iconFile="$INSTALL_PATH/Ville Noumea\icons\mairie.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Ville de Noumea"/>
     </shortcut>
 
     <!-- PACK DPM -->
     <shortcut name="Dpmmc"
-              target="$INSTALL_PATH/DPMMC\launch_dpmmc.${script.ext}"
+              target="firefox http://dpmmc.site-mairie.noumea.nc"
               workingDirectory="$INSTALL_PATH/DPMMC"
               iconFile="$INSTALL_PATH/DPMMC\icons\dpmmc.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Main courante"/>
     </shortcut>
     <shortcut name="Geoloc"
-              target="$INSTALL_PATH/Geoloc\launch_geoloc.${script.ext}"
+              target="firefox http://dpm.geoloc.site-mairie.noumea.nc/"
               workingDirectory="$INSTALL_PATH/Geoloc"
               iconFile="$INSTALL_PATH/Geoloc\icons\geoloc.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="DPM Geoloc"/>
     </shortcut>
 
     <!-- PACK PDC -->
     <shortcut name="Pdc"
-              target="$INSTALL_PATH/Permis Construire\launch_pdc.${script.ext}"
+              target="firefox https://permis-construire.ville-noumea.nc"
               workingDirectory="$INSTALL_PATH/Permis Construire"
               iconFile="$INSTALL_PATH/Permis Construire\icons\pdc.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Permis de Construire"/>
     </shortcut>
 
     <!-- PACK SIG -->
     <shortcut name="Administratif et Equipements"
-              target="$INSTALL_PATH/Administratif et Equipements\launch_adm_eqpt.${script.ext}"
+              target="firefox http://carto.site-mairie.noumea.nc/apps/Administratif_Equipements/"
               workingDirectory="$INSTALL_PATH/Administratif et Equipements"
               iconFile="$INSTALL_PATH/Administratif et Equipements\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Administratif et Equipements"/>
     </shortcut>
     <shortcut name="Foncier"
-              target="$INSTALL_PATH/Foncier\launch_foncier.${script.ext}"
+              target="firefox http://carto.site-mairie.noumea.nc/apps/foncier/"
               workingDirectory="$INSTALL_PATH/Foncier"
               iconFile="$INSTALL_PATH/Foncier\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Foncier"/>
     </shortcut>
     <shortcut name="PUD"
-              target="$INSTALL_PATH/PUD\launch_pud.${script.ext}"
+              target="firefox http://carto.site-mairie.noumea.nc/apps/PUD/"
               workingDirectory="$INSTALL_PATH/PUD"
               iconFile="$INSTALL_PATH/PUD\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="PUD"/>
     </shortcut>
     <shortcut name="Serail"
-              target="$INSTALL_PATH/Serail\launch_serail.${script.ext}"
+              target="firefox http://carto.site-mairie.noumea.nc/apps/serail/"
               workingDirectory="$INSTALL_PATH/Serail"
               iconFile="$INSTALL_PATH/Serail\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Serail"/>
     </shortcut>
     <shortcut name="Securite civile"
-              target="$INSTALL_PATH/Securite civile\launch_secu_civile.${script.ext}"
+              target="firefox http://carto.site-mairie.noumea.nc/apps/DSIS/"
               workingDirectory="$INSTALL_PATH/Securite civile"
               iconFile="$INSTALL_PATH/Securite civile\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Securite civile"/>
     </shortcut>
     <shortcut name="Securite civile et Risques naturels"
-              target="$INSTALL_PATH/Risques naturels\launch_risque_nat.${script.ext}"
+              target="firefox http://carto.site-mairie.noumea.nc/apps/DSIS_Risques/"
               workingDirectory="$INSTALL_PATH/Risques naturels"
               iconFile="$INSTALL_PATH/Risques naturels\icons\esri.ico"
               startup="no"
               initialState="normal"
               programGroup="yes"
               desktop="yes"
-              startMenu="yes">
+              startMenu="yes"
+              type="Application">
 
         <createForPack name="Securite civile et Risques naturels"/>
     </shortcut>
