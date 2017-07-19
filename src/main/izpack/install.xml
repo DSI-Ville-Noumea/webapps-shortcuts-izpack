@@ -23,7 +23,6 @@
         <res id="HTMLInfoPanel.welcome" src="welcome.html"/>
         <res id="IZPackLogo" src="images/izpack-logo-medium.png"/>
         <res id="Installer.image" src="images/DSI.png"/>
-        <res id="TargetPanel.dir.unix" src="TargetDirUnix.txt"/>
         <res id="shortcutSpec.xml" src="shortcutSpec.xml" />
         <res id="Unix_shortcutSpec.xml" src="unix_shortcutSpec.xml" />
         <res id="LicencePanel.licence" src="legal/License.txt"/>
