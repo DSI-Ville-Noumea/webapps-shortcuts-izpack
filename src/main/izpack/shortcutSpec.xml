@@ -192,6 +192,19 @@
         <createForPack name="Permis de Construire"/>
     </shortcut>
 
+    <shortcut name="Documentation Pdc"
+              target="$INSTALL_PATH/Permis Construire\launch_pdc_doc.${script.ext}"
+              workingDirectory="$INSTALL_PATH/Permis Construire"
+              iconFile="$INSTALL_PATH/Permis Construire\icons\owncloud_pdc.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Permis de Construire"/>
+    </shortcut>
+
     <!-- PACK SIG -->
     <shortcut name="Administratif et Equipements"
               target="$INSTALL_PATH/Administratif et Equipements\launch_adm_eqpt.${script.ext}"

@@ -13,7 +13,6 @@
             <author email="adrien.sales@ville-noumea.nc" name="Adrien SALES (Architecte)"/>
             <author email="michele.barre@ville-noumea.nc" name="Michèle BARRE (Développeur)"/>
         </authors>
-        <!--<run-privileged condition="izpack.windowsinstall|izpack.macinstall"/>-->
         <summarylogfilepath>$INSTALL_PATH/installinfo/Summary.htm</summarylogfilepath>
     </info>
 
@@ -50,7 +49,6 @@
     </guiprefs>
 
     <locale>
-        <!--<langpack iso3="eng"/>-->
         <langpack iso3="fra"/>
     </locale>
 
@@ -79,16 +77,6 @@
             <file src="common_agent/portail/launch_portail.bat"      targetdir="$INSTALL_PATH/Portail">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/portail/launch_portail.sh" targetdir="$INSTALL_PATH/Portail">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Portail/launch_portail.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Portail/launch_portail.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Easy Vista" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Logiciel permettant le suivi de l'activité des services d'assistance : demande de services, déclaration de problèmes ou d'incidents.</description>
@@ -96,17 +84,6 @@
             <file src="common_agent/easy_vista/launch_ev.bat"   targetdir="$INSTALL_PATH/Easy Vista">
                 <os family="windows"/>
             </file>
-
-            <!-- Unix - Linux -->
-            <file src="common_agent/easy_vista/launch_ev.sh" targetdir="$INSTALL_PATH/Easy Vista">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Easy Vista/launch_ev.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Easy Vista/launch_ev.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Kiosque RH" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Application de gestion des Ressources Humaines : EAE, demandes de congés, pointages, titres repas, informations personnelles de l'agent. </description>
@@ -114,16 +91,6 @@
             <file src="common_agent/kiosque_rh/launch_krh.bat"  targetdir="$INSTALL_PATH/Kiosque RH">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/kiosque_rh/launch_krh.sh" targetdir="$INSTALL_PATH/Kiosque RH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Kiosque RH/launch_krh.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Kiosque RH/launch_krh.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="WebI" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Application permettant aux utilisateurs, à travers des environnements prédéfinis, de créer leur rapport et tableaux de bord de façon autonome.</description>
@@ -131,16 +98,6 @@
             <file src="common_agent/bi/launch_bi.bat"           targetdir="$INSTALL_PATH/WebI">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/bi/launch_bi.sh" targetdir="$INSTALL_PATH/WebI">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/WebI/launch_bi.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/WebI/launch_bi.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Plan Interactif" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Plan Intéractif de la ville</description>
@@ -148,16 +105,6 @@
             <file src="common_agent/plan_interactif/launch_plan_int.bat"     targetdir="$INSTALL_PATH/Plan Interactif">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/plan_interactif/launch_plan_int.sh" targetdir="$INSTALL_PATH/Plan Interactif">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Plan Interactif/launch_plan_int.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Plan Interactif/launch_plan_int.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Outlook Webmail" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Webmail Outlook</description>
@@ -165,16 +112,6 @@
             <file src="common_agent/webmail/launch_webmail.bat"           targetdir="$INSTALL_PATH/Outlook Webmail">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/webmail/launch_webmail.sh" targetdir="$INSTALL_PATH/Outlook Webmail">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Outlook Webmail/launch_webmail.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Outlook Webmail/launch_webmail.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Post-Office" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Application de gestion du courrier de la Mairie de Nouméa (AVP, Notes de services, etc...)</description>
@@ -182,16 +119,6 @@
             <file src="common_agent/post_office/launch_po.bat"           targetdir="$INSTALL_PATH/Post-Office">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/post_office/launch_po.sh" targetdir="$INSTALL_PATH/Post-Office">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Post-Office/launch_po.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Post-Office/launch_po.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Astre GF" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Progiciel de gestion de la comptabilité de la Ville de Nouméa.</description>
@@ -199,16 +126,6 @@
             <file src="common_agent/astre/launch_astre.bat"           targetdir="$INSTALL_PATH/Astre GF">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/astre/launch_astre.sh" targetdir="$INSTALL_PATH/Astre GF">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Astre GF/launch_astre.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Astre GF/launch_astre.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Blog Amicale" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Blog de l'Amicale des agents de la Ville de Nouméa</description>
@@ -216,16 +133,6 @@
             <file src="common_agent/amicale/launch_amicale.bat"           targetdir="$INSTALL_PATH/Blog Amicale">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/amicale/launch_amicale.sh" targetdir="$INSTALL_PATH/Blog Amicale">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Blog Amicale/launch_amicale.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Blog Amicale/launch_amicale.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Allo! Mairie" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Application de demande d'intervention technique sur le domaine public.</description>
@@ -233,16 +140,6 @@
             <file src="common_agent/allo_mairie/launch_allo_mairie.bat"           targetdir="$INSTALL_PATH/Allo Mairie">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/allo_mairie/launch_allo_mairie.sh" targetdir="$INSTALL_PATH/Allo Mairie">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Allo Mairie/launch_allo_mairie.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Allo Mairie/launch_allo_mairie.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Deliberations" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Délibérations du Conseil Municipal</description>
@@ -250,16 +147,6 @@
             <file src="common_agent/deliberations/launch_deliberations.bat"           targetdir="$INSTALL_PATH/Deliberations">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/deliberations/launch_deliberations.sh" targetdir="$INSTALL_PATH/Deliberations">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Deliberations/launch_deliberations.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Deliberations/launch_deliberations.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Ville de Noumea" preselected="yes" required="yes" parent="Agent Mairie">
             <description>Site web de la Ville de Nouméa</description>
@@ -267,16 +154,6 @@
             <file src="common_agent/ville_noumea/launch_ville_noumea.bat"           targetdir="$INSTALL_PATH/Ville Noumea">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="common_agent/ville_noumea/launch_ville_noumea.sh" targetdir="$INSTALL_PATH/Ville Noumea">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Ville Noumea/launch_ville_noumea.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Ville Noumea/launch_ville_noumea.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
 
         <pack name="Agent DPM" preselected="no" required="no">
@@ -288,16 +165,6 @@
             <file src="dpm/dpmmc/launch_dpmmc.bat"         targetdir="$INSTALL_PATH/DPMMC">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="dpm/dpmmc/launch_dpmmc.sh" targetdir="$INSTALL_PATH/DPMMC">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/DPMMC/launch_dpmmc.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/DPMMC/launch_dpmmc.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="DPM Geoloc" preselected="no" required="no" parent="Agent DPM">
             <description>Application de géolocalisation des véhicules de la Police Municipale de la Ville de Nouméa</description>
@@ -305,16 +172,6 @@
             <file src="dpm/geoloc/launch_geoloc.bat"         targetdir="$INSTALL_PATH/Geoloc">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="dpm/geoloc/launch_geoloc.sh" targetdir="$INSTALL_PATH/Geoloc">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Geoloc/launch_geoloc.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Geoloc/launch_geoloc.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
 
         <!-- Pack Agent SGAU -->
@@ -327,16 +184,13 @@
             <file src="pdc/launch_pdc.bat"         targetdir="$INSTALL_PATH/Permis Construire">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="pdc/launch_pdc.sh" targetdir="$INSTALL_PATH/Permis Construire">
-                <os family="unix"/>
+        </pack>
+        <pack name="Documention Pdc" preselected="no" required="no" parent="Agent SGAU">
+            <description>Manuel utilisateur de l'application de gestion des permis de construire de la Ville de Nouméa</description>
+            <file src="pdc/owncloud_pdc.ico"                targetdir="$INSTALL_PATH/Permis Construire/icons"/>
+            <file src="pdc/launch_pdc_doc.bat"         targetdir="$INSTALL_PATH/Permis Construire">
+                <os family="windows"/>
             </file>
-            <parsable targetfile="$INSTALL_PATH/Permis Construire/launch_pdc.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Permis Construire/launch_pdc.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
 
         <!-- Pack Agent SIG -->
@@ -346,58 +200,18 @@
         <pack name="Administratif et Equipements" preselected="no" required="no" parent="Agent SIG">
             <description></description>
             <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Administratif et Equipements/icons"/>
-            <!-- Unix - Linux -->
-            <file src="sig/admin_equipt/launch_adm_eqpt.sh" targetdir="$INSTALL_PATH/Administratif et Equipements">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Administratif et Equipements/launch_adm_eqpt.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Administratif et Equipements/launch_adm_eqpt.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Foncier" preselected="no" required="no" parent="Agent SIG">
             <description></description>
             <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Foncier/icons"/>
-            <!-- Unix - Linux -->
-            <file src="sig/foncier/launch_foncier.sh" targetdir="$INSTALL_PATH/Foncier">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Foncier/launch_foncier.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Foncier/launch_foncier.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="PUD" preselected="no" required="no" parent="Agent SIG">
             <description></description>
             <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/PUD/icons"/>
-            <!-- Unix - Linux -->
-            <file src="sig/pud/launch_pud.sh" targetdir="$INSTALL_PATH/PUD">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/PUD/launch_pud.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/PUD/launch_pud.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Serail" preselected="no" required="no" parent="Agent SIG">
             <description></description>
             <file src="sig/esri.ico"                targetdir="$INSTALL_PATH/Serail/icons"/>
-            <!-- Unix - Linux -->
-            <file src="sig/serail/launch_serail.sh" targetdir="$INSTALL_PATH/Serail">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Serail/launch_serail.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Serail/launch_serail.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Securite civile" preselected="no" required="no" parent="Agent SIG">
             <description></description>
@@ -405,16 +219,6 @@
             <file src="sig/secu_civile/launch_secu_civile.bat"         targetdir="$INSTALL_PATH/Securite civile">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="sig/secu_civile/launch_secu_civile.sh" targetdir="$INSTALL_PATH/Securite civile">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Securite civile/launch_secu_civile.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Securite civile/launch_secu_civile.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
         <pack name="Securite civile et Risques naturels" preselected="no" required="no" parent="Agent SIG">
             <description></description>
@@ -422,16 +226,6 @@
             <file src="sig/risques_nat/launch_risques_nat.bat"         targetdir="$INSTALL_PATH/Risques naturels">
                 <os family="windows"/>
             </file>
-            <!-- Unix - Linux -->
-            <file src="sig/risques_nat/launch_risques_nat.sh" targetdir="$INSTALL_PATH/Risques naturels">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/Risques naturels/launch_risques_nat.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/Risques naturels/launch_risques_nat.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
         </pack>
     </packs>
 

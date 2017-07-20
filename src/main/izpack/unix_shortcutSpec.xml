@@ -6,7 +6,7 @@
 
     <programGroup defaultName="Applications Mairie" location="startMenu"/>
     <shortcut name="Easy Vista"
-              target="firefox https://easyvista.ville-noumea.nc"
+              target="xdg-open https://easyvista.ville-noumea.nc"
               workingDirectory="$INSTALL_PATH/Easy Vista"
               iconFile="$INSTALL_PATH/Easy Vista\icons\ev.ico"
               startup="no"
@@ -14,12 +14,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Easy Vista"/>
     </shortcut>
     <shortcut name="Kiosque Rh"
-              target="firefox https://kiosque-rh"
+              target="xdg-open https://kiosque-rh"
               workingDirectory="$INSTALL_PATH/Kiosque RH"
               iconFile="$INSTALL_PATH/Kiosque RH\icons\kiosque_rh.ico"
               startup="no"
@@ -27,12 +28,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Kiosque RH"/>
     </shortcut>
     <shortcut name="Web Intelligence"
-              target="firefox https://svpbo0:8080/BOE/BI"
+              target="xdg-open https://svpbo0:8080/BOE/BI"
               workingDirectory="$INSTALL_PATH/WebI"
               iconFile="$INSTALL_PATH/WebI\icons\webi.ico"
               startup="no"
@@ -40,12 +42,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="WebI"/>
     </shortcut>
     <shortcut name="Intranet Mairie"
-              target="firefox https://portail.site-mairie.noumea.nc/"
+              target="xdg-open https://portail.site-mairie.noumea.nc/"
               workingDirectory="$INSTALL_PATH/Portail"
               iconFile="$INSTALL_PATH/Portail\icons\hypolite.ico"
               startup="no"
@@ -53,12 +56,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Portail Intranet"/>
     </shortcut>
     <shortcut name="Plan Interactif"
-              target="firefox http://carto.noumea.nc/portail/?center=446177%2C214128&amp;scale=10000&amp;"
+              target="xdg-open http://carto.noumea.nc/portail/?center=446177%2C214128&amp;scale=10000&amp;"
               workingDirectory="$INSTALL_PATH/Plan Interactif"
               iconFile="$INSTALL_PATH/Plan Interactif\icons\esri.ico"
               startup="no"
@@ -66,12 +70,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Plan Interactif"/>
     </shortcut>
     <shortcut name="Outlook Webmail"
-              target="firefox https://webmail.ville-noumea.nc/owa/"
+              target="xdg-open https://webmail.ville-noumea.nc/owa/"
               workingDirectory="$INSTALL_PATH/Outlook Webmail"
               iconFile="$INSTALL_PATH/Outlook Webmail\icons\webmail.ico"
               startup="no"
@@ -79,12 +84,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Outlook Webmail"/>
     </shortcut>
     <shortcut name="Post-Office"
-              target="firefox https://postoffice/"
+              target="xdg-open https://postoffice/"
               workingDirectory="$INSTALL_PATH/Post-Office"
               iconFile="$INSTALL_PATH/Post-Office\icons\po.ico"
               startup="no"
@@ -92,12 +98,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Outlook Webmail"/>
     </shortcut>
     <shortcut name="Astre GF"
-              target="firefox https://astre.ville-noumea.nc/astre/gf/EcrAccueil.jsp"
+              target="xdg-open https://astre.ville-noumea.nc/astre/gf/EcrAccueil.jsp"
               workingDirectory="$INSTALL_PATH/Astre GF"
               iconFile="$INSTALL_PATH/Astre GF\icons\astre.ico"
               startup="no"
@@ -105,12 +112,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Astre GF"/>
     </shortcut>
     <shortcut name="Blog Amicale"
-              target="firefox http://svpsp/blogs/amicale/default.aspx"
+              target="xdg-open http://svpsp/blogs/amicale/default.aspx"
               workingDirectory="$INSTALL_PATH/Blog Amicale"
               iconFile="$INSTALL_PATH/Blog Amicale\icons\amicale.ico"
               startup="no"
@@ -118,12 +126,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Blog Amicale"/>
     </shortcut>
     <shortcut name="Allo! Mairie"
-              target="firefox http://eatalsaisieinternet/EAtalServlet"
+              target="xdg-open http://eatalsaisieinternet/EAtalServlet"
               workingDirectory="$INSTALL_PATH/Allo Mairie"
               iconFile="$INSTALL_PATH/Allo Mairie\icons\allo_mairie.ico"
               startup="no"
@@ -131,12 +140,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Allo! Mairie"/>
     </shortcut>
     <shortcut name="Deliberations"
-              target="firefox http://intranet:85/conseils/accueil.html"
+              target="xdg-open http://intranet:85/conseils/accueil.html"
               workingDirectory="$INSTALL_PATH/Deliberations"
               iconFile="$INSTALL_PATH/Deliberations\icons\mairie.ico"
               startup="no"
@@ -144,12 +154,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Deliberations"/>
     </shortcut>
     <shortcut name="Ville de Noumea"
-              target="firefox http://www.noumea.nc/"
+              target="xdg-open http://www.noumea.nc/"
               workingDirectory="$INSTALL_PATH/Ville Noumea"
               iconFile="$INSTALL_PATH/Ville Noumea\icons\mairie.ico"
               startup="no"
@@ -157,14 +168,15 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Ville de Noumea"/>
     </shortcut>
 
     <!-- PACK DPM -->
     <shortcut name="Dpmmc"
-              target="firefox http://dpmmc.site-mairie.noumea.nc"
+              target="xdg-open http://dpmmc.site-mairie.noumea.nc"
               workingDirectory="$INSTALL_PATH/DPMMC"
               iconFile="$INSTALL_PATH/DPMMC\icons\dpmmc.ico"
               startup="no"
@@ -172,12 +184,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Main courante"/>
     </shortcut>
     <shortcut name="Geoloc"
-              target="firefox http://dpm.geoloc.site-mairie.noumea.nc/"
+              target="xdg-open http://dpm.geoloc.site-mairie.noumea.nc/"
               workingDirectory="$INSTALL_PATH/Geoloc"
               iconFile="$INSTALL_PATH/Geoloc\icons\geoloc.ico"
               startup="no"
@@ -185,14 +198,15 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="DPM Geoloc"/>
     </shortcut>
 
     <!-- PACK PDC -->
     <shortcut name="Pdc"
-              target="firefox https://permis-construire.ville-noumea.nc"
+              target="xdg-open https://permis-construire.ville-noumea.nc"
               workingDirectory="$INSTALL_PATH/Permis Construire"
               iconFile="$INSTALL_PATH/Permis Construire\icons\pdc.ico"
               startup="no"
@@ -200,14 +214,30 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Permis de Construire"/>
+    </shortcut>
+    <shortcut name="Documentation Pdc"
+              target="xdg-open https://owncloud.ville-noumea.nc/public.php?service=files&amp;t=b9f816e9f1eddaf4f0aef008f8462963"
+              workingDirectory="$INSTALL_PATH/Permis Construire"
+              iconFile="$INSTALL_PATH/Permis Construire\icons\owncloud_pdc.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Permis de Construire"/>
     </shortcut>
 
+
     <!-- PACK SIG -->
     <shortcut name="Administratif et Equipements"
-              target="firefox http://carto.site-mairie.noumea.nc/apps/Administratif_Equipements/"
+              target="xdg-open http://carto.site-mairie.noumea.nc/apps/Administratif_Equipements/"
               workingDirectory="$INSTALL_PATH/Administratif et Equipements"
               iconFile="$INSTALL_PATH/Administratif et Equipements\icons\esri.ico"
               startup="no"
@@ -215,12 +245,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Administratif et Equipements"/>
     </shortcut>
     <shortcut name="Foncier"
-              target="firefox http://carto.site-mairie.noumea.nc/apps/foncier/"
+              target="xdg-open http://carto.site-mairie.noumea.nc/apps/foncier/"
               workingDirectory="$INSTALL_PATH/Foncier"
               iconFile="$INSTALL_PATH/Foncier\icons\esri.ico"
               startup="no"
@@ -228,12 +259,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Foncier"/>
     </shortcut>
     <shortcut name="PUD"
-              target="firefox http://carto.site-mairie.noumea.nc/apps/PUD/"
+              target="xdg-open http://carto.site-mairie.noumea.nc/apps/PUD/"
               workingDirectory="$INSTALL_PATH/PUD"
               iconFile="$INSTALL_PATH/PUD\icons\esri.ico"
               startup="no"
@@ -241,12 +273,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="PUD"/>
     </shortcut>
     <shortcut name="Serail"
-              target="firefox http://carto.site-mairie.noumea.nc/apps/serail/"
+              target="xdg-open http://carto.site-mairie.noumea.nc/apps/serail/"
               workingDirectory="$INSTALL_PATH/Serail"
               iconFile="$INSTALL_PATH/Serail\icons\esri.ico"
               startup="no"
@@ -254,12 +287,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Serail"/>
     </shortcut>
     <shortcut name="Securite civile"
-              target="firefox http://carto.site-mairie.noumea.nc/apps/DSIS/"
+              target="xdg-open http://carto.site-mairie.noumea.nc/apps/DSIS/"
               workingDirectory="$INSTALL_PATH/Securite civile"
               iconFile="$INSTALL_PATH/Securite civile\icons\esri.ico"
               startup="no"
@@ -267,12 +301,13 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Securite civile"/>
     </shortcut>
     <shortcut name="Securite civile et Risques naturels"
-              target="firefox http://carto.site-mairie.noumea.nc/apps/DSIS_Risques/"
+              target="xdg-open http://carto.site-mairie.noumea.nc/apps/DSIS_Risques/"
               workingDirectory="$INSTALL_PATH/Risques naturels"
               iconFile="$INSTALL_PATH/Risques naturels\icons\esri.ico"
               startup="no"
@@ -280,7 +315,8 @@
               programGroup="yes"
               desktop="yes"
               startMenu="yes"
-              type="Application">
+              type="Application"
+              categories="Application;Applications Mairie;">
 
         <createForPack name="Securite civile et Risques naturels"/>
     </shortcut>
