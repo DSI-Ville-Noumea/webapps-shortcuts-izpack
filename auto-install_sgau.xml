@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutomatedInstallation langpack="fra">
+    <com.izforge.izpack.panels.htmlinfo.HTMLInfoPanel id="welcome"/>
+    <com.izforge.izpack.panels.licence.LicencePanel id="licence"/>
+    <com.izforge.izpack.panels.target.TargetPanel id="install_dir">
+        <installpath>C:\Program Files\Applications Mairie</installpath>
+    </com.izforge.izpack.panels.target.TargetPanel>
+    <com.izforge.izpack.panels.treepacks.TreePacksPanel id="tree_pack">
+        <pack index="0" name="Agent Mairie" selected="true"/>
+        <pack index="1" name="Portail Intranet" selected="true"/>
+        <pack index="2" name="Easy Vista" selected="true"/>
+        <pack index="3" name="Kiosque RH" selected="true"/>
+        <pack index="4" name="WebI" selected="true"/>
+        <pack index="5" name="Plan Interactif" selected="true"/>
+        <pack index="6" name="Outlook Webmail" selected="true"/>
+        <pack index="7" name="Post-Office" selected="true"/>
+        <pack index="8" name="Astre GF" selected="true"/>
+        <pack index="9" name="Blog Amicale" selected="true"/>
+        <pack index="10" name="Allo! Mairie" selected="true"/>
+        <pack index="11" name="Deliberations" selected="true"/>
+        <pack index="12" name="Ville de Noumea" selected="true"/>
+        <pack index="13" name="Agent SGAU" selected="true"/>
+        <pack index="14" name="Permis de Construire" selected="true"/>
+        <pack index="15" name="Documention Pdc" selected="true"/>
+    </com.izforge.izpack.panels.treepacks.TreePacksPanel>
+    <com.izforge.izpack.panels.install.InstallPanel id="install"/>
+    <com.izforge.izpack.panels.shortcut.ShortcutPanel id="shortcuts">
+        <createMenuShortcuts>true</createMenuShortcuts>
+        <programGroup>Applications Mairie</programGroup>
+        <createDesktopShortcuts>true</createDesktopShortcuts>
+        <createStartupShortcuts>false</createStartupShortcuts>
+        <shortcutType>all</shortcutType>
+    </com.izforge.izpack.panels.shortcut.ShortcutPanel>
+    <com.izforge.izpack.panels.finish.FinishPanel id="finish"/>
+</AutomatedInstallation>

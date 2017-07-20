@@ -6,7 +6,7 @@
 
     <info>
         <appname>Raccourcis Applications Mairie</appname>
-        <appversion>1.00.01-SNAPSHOT</appversion>
+        <appversion>1.00.01</appversion>
         <appsubpath>webapps-shortcuts-izpack</appsubpath>
         <javaversion>1.8</javaversion>
         <authors>
