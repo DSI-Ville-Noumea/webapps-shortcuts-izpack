@@ -152,6 +152,20 @@
         <createForPack name="Ville de Noumea"/>
     </shortcut>
 
+    <shortcut name="Owncloud"
+              target="$INSTALL_PATH/Owncloud\launch_owncloud.bat"
+              workingDirectory="$INSTALL_PATH/Owncloud"
+              iconFile="$INSTALL_PATH/Owncloud\icons\owncloud.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Owncloud"/>
+    </shortcut>
+
+
     <!-- PACK DPM -->
     <shortcut name="Dpmmc"
               target="$INSTALL_PATH/DPMMC\launch_dpmmc.bat"

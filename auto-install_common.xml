@@ -19,6 +19,7 @@
 <pack index="10" name="Allo! Mairie" selected="true"/>
 <pack index="11" name="Deliberations" selected="true"/>
 <pack index="12" name="Ville de Noumea" selected="true"/>
+<pack index="13" name="Owncloud" selected="true"/>
 </com.izforge.izpack.panels.treepacks.TreePacksPanel>
 <com.izforge.izpack.panels.install.InstallPanel id="install"/>
 <com.izforge.izpack.panels.shortcut.ShortcutPanel id="shortcuts">

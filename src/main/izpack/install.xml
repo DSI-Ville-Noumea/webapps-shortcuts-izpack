@@ -6,7 +6,7 @@
 
     <info>
         <appname>Raccourcis Applications Mairie</appname>
-        <appversion>1.00.01</appversion>
+        <appversion>1.00.02</appversion>
         <appsubpath>webapps-shortcuts-izpack</appsubpath>
         <javaversion>1.8</javaversion>
         <authors>
@@ -152,6 +152,13 @@
             <description>Site web de la Ville de Nouméa</description>
             <file src="common_agent/ville_noumea/mairie.ico"                targetdir="$INSTALL_PATH/Ville Noumea/icons"/>
             <file src="common_agent/ville_noumea/launch_ville_noumea.bat"           targetdir="$INSTALL_PATH/Ville Noumea">
+                <os family="windows"/>
+            </file>
+        </pack>
+        <pack name="Owncloud" preselected="yes" required="yes" parent="Agent Mairie">
+            <description>Plateforme de services de stockage et de partage de fichiers de la Mairie de Noumea</description>
+            <file src="common_agent/owncloud/owncloud.ico"                targetdir="$INSTALL_PATH/Owncloud/icons"/>
+            <file src="common_agent/owncloud/launch_owncloud.bat"           targetdir="$INSTALL_PATH/Owncloud">
                 <os family="windows"/>
             </file>
         </pack>
