@@ -304,7 +304,7 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="DSI"/>
+        <createForPack name="Preparation budgetaire"/>
     </shortcut>
     <shortcut name="Annuaire Omnivista"
               target="$INSTALL_PATH/Omnivista\launch_omnivista.bat"
@@ -316,7 +316,7 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="DSI"/>
+        <createForPack name="Annuaire Omnivista"/>
     </shortcut>
     <shortcut name="NQI Orchestra"
               target="$INSTALL_PATH/NQI Orchestra\launch_nqi.bat"
@@ -328,7 +328,7 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="DSI"/>
+        <createForPack name="NQI Orchestra"/>
     </shortcut>
     <shortcut name="Redmine"
               target="$INSTALL_PATH/Redmine\launch_redmine.bat"
@@ -340,7 +340,7 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="DSI"/>
+        <createForPack name="Redmine"/>
     </shortcut>
     <shortcut name="Slack"
               target="$INSTALL_PATH/Slack\launch_slack.bat"
@@ -352,7 +352,7 @@
               desktop="yes"
               startMenu="yes">
 
-        <createForPack name="DSI"/>
+        <createForPack name="Slack"/>
     </shortcut>
 
 </izpack:shortcuts>
