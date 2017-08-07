@@ -336,5 +336,76 @@
         <createForPack name="Securite civile et Risques naturels"/>
     </shortcut>
 
+    <!-- Pack DSI -->
+    <shortcut name="Preparation budgetaire"
+              target="xdg-open http://nppb.site-mairie.noumea.nc"
+              workingDirectory="$INSTALL_PATH/NPPB"
+              iconFile="$INSTALL_PATH/NPPB\icons\nppb.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Preparation budgetaire"/>
+    </shortcut>
+    <shortcut name="Annuaire Omnivista"
+              target="xdg-open https://annuaire-web/php-bin/WebClient.php?lang=fr_FR"
+              workingDirectory="$INSTALL_PATH/Omnivista"
+              iconFile="$INSTALL_PATH/Omnivista\icons\omnivista.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Annuaire Omnivista"/>
+    </shortcut>
+    <shortcut name="NQI Orchestra"
+              target="xdg-open http://dsi-noumea.nqicorp.com/cpms/"
+              workingDirectory="$INSTALL_PATH/NQI Orchestra"
+              iconFile="$INSTALL_PATH/NQI Orchestra\icons\nqi.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="NQI Orchestra"/>
+    </shortcut>
+    <shortcut name="Redmine"
+              target="xdg-open https://redmine.ville-noumea.nc/"
+              workingDirectory="$INSTALL_PATH/Redmine"
+              iconFile="$INSTALL_PATH/Redmine\icons\redmine.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Redmine"/>
+    </shortcut>
+    <shortcut name="Slack"
+              target="xdg-open https://dsi-mairie-noumea.slack.com"
+              workingDirectory="$INSTALL_PATH/Slack"
+              iconFile="$INSTALL_PATH/Slack\icons\slack.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Slack"/>
+    </shortcut>
 </izpack:shortcuts>
 

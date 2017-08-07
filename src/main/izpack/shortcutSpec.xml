@@ -293,5 +293,67 @@
         <createForPack name="Securite civile et Risques naturels"/>
     </shortcut>
 
+    <!-- PACK DSI -->
+    <shortcut name="Preparation budgetaire"
+              target="$INSTALL_PATH/NPPB\launch_nppb.bat"
+              workingDirectory="$INSTALL_PATH/NPPB"
+              iconFile="$INSTALL_PATH/NPPB\icons\nppb.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="DSI"/>
+    </shortcut>
+    <shortcut name="Annuaire Omnivista"
+              target="$INSTALL_PATH/Omnivista\launch_omnivista.bat"
+              workingDirectory="$INSTALL_PATH/Omnivista"
+              iconFile="$INSTALL_PATH/Omnivista\icons\omnivista.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="DSI"/>
+    </shortcut>
+    <shortcut name="NQI Orchestra"
+              target="$INSTALL_PATH/NQI Orchestra\launch_nqi.bat"
+              workingDirectory="$INSTALL_PATH/NQI Orchestra"
+              iconFile="$INSTALL_PATH/NQI Orchestra\icons\nqi.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="DSI"/>
+    </shortcut>
+    <shortcut name="Redmine"
+              target="$INSTALL_PATH/Redmine\launch_redmine.bat"
+              workingDirectory="$INSTALL_PATH/Redmine"
+              iconFile="$INSTALL_PATH/Redmine\icons\redmine.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="DSI"/>
+    </shortcut>
+    <shortcut name="Slack"
+              target="$INSTALL_PATH/Slack\launch_slack.bat"
+              workingDirectory="$INSTALL_PATH/Slack"
+              iconFile="$INSTALL_PATH/Slack\icons\slack.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="DSI"/>
+    </shortcut>
+
 </izpack:shortcuts>
 

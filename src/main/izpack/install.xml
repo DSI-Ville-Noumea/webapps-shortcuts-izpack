@@ -6,7 +6,7 @@
 
     <info>
         <appname>Raccourcis Applications Mairie</appname>
-        <appversion>1.00.02</appversion>
+        <appversion>1.00.03</appversion>
         <appsubpath>webapps-shortcuts-izpack</appsubpath>
         <javaversion>1.8</javaversion>
         <authors>
@@ -233,6 +233,31 @@
             <file src="sig/risques_nat/launch_risques_nat.bat"         targetdir="$INSTALL_PATH/Risques naturels">
                 <os family="windows"/>
             </file>
+        </pack>
+
+        <!-- Pack Agent DSI -->
+        <pack name="Agent DSI" preselected="no" required="no">
+            <description>Ensemble des applications de la DSI</description>
+        </pack>
+        <pack name="Preparation budgetaire" preselected="no" required="no" parent="Agent DSI">
+            <description>Logiciel de préparation budgétaire de la DSI.</description>
+            <file src="dsi/nppb/nppb.ico"                targetdir="$INSTALL_PATH/NPPB/icons"/>
+        </pack>
+        <pack name="NQI Orchestra" preselected="no" required="no" parent="Agent DSI">
+            <description>Logiciel de gestion de projets et de portefeuilles de la DSI.</description>
+            <file src="dsi/nqi/nqi.ico"                targetdir="$INSTALL_PATH/NQI Orchestra/icons"/>
+        </pack>
+        <pack name="Omnivista" preselected="no" required="no" parent="Agent DSI">
+            <description>Annuaire web interne de la Ville de Noumea.</description>
+            <file src="dsi/omnivista/omnivista.ico"                targetdir="$INSTALL_PATH/Omnivista/icons"/>
+        </pack>
+        <pack name="Redmine" preselected="no" required="no" parent="Agent DSI">
+            <description>Outil de gestion de projets (demandes, incidents, wiki, etc..) de la DSI.</description>
+            <file src="dsi/redmine/redmine.ico"                targetdir="$INSTALL_PATH/Redmine/icons"/>
+        </pack>
+        <pack name="Slack" preselected="no" required="no" parent="Agent DSI">
+            <description>Outil web de messagerie instantannée de la DSI.</description>
+            <file src="dsi/slack/slack.ico"                targetdir="$INSTALL_PATH/Slack/icons"/>
         </pack>
     </packs>
 
