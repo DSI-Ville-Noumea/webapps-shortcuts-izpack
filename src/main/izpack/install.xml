@@ -242,22 +242,37 @@
         <pack name="Preparation budgetaire" preselected="no" required="no" parent="Agent DSI">
             <description>Logiciel de préparation budgétaire de la DSI.</description>
             <file src="dsi/nppb/nppb.ico"                targetdir="$INSTALL_PATH/NPPB/icons"/>
+            <file src="dsi/nppb/launch_nppb.bat"         targetdir="$INSTALL_PATH/NPPB">
+                <os family="windows"/>
+            </file>
         </pack>
         <pack name="NQI Orchestra" preselected="no" required="no" parent="Agent DSI">
             <description>Logiciel de gestion de projets et de portefeuilles de la DSI.</description>
             <file src="dsi/nqi/nqi.ico"                targetdir="$INSTALL_PATH/NQI Orchestra/icons"/>
+            <file src="dsi/nqi/launch_nqi.bat"         targetdir="$INSTALL_PATH/NQI Orchestra">
+                <os family="windows"/>
+            </file>
         </pack>
         <pack name="Omnivista" preselected="no" required="no" parent="Agent DSI">
             <description>Annuaire web interne de la Ville de Noumea.</description>
             <file src="dsi/omnivista/omnivista.ico"                targetdir="$INSTALL_PATH/Omnivista/icons"/>
+            <file src="dsi/omnivista/launch_omnivista.bat"         targetdir="$INSTALL_PATH/Omnivista">
+                <os family="windows"/>
+            </file>
         </pack>
         <pack name="Redmine" preselected="no" required="no" parent="Agent DSI">
             <description>Outil de gestion de projets (demandes, incidents, wiki, etc..) de la DSI.</description>
             <file src="dsi/redmine/redmine.ico"                targetdir="$INSTALL_PATH/Redmine/icons"/>
+            <file src="dsi/redmine/launch_redmine.bat"         targetdir="$INSTALL_PATH/Redmine">
+                <os family="windows"/>
+            </file>
         </pack>
         <pack name="Slack" preselected="no" required="no" parent="Agent DSI">
             <description>Outil web de messagerie instantannée de la DSI.</description>
             <file src="dsi/slack/slack.ico"                targetdir="$INSTALL_PATH/Slack/icons"/>
+            <file src="dsi/slack/launch_slack.bat"         targetdir="$INSTALL_PATH/Slack">
+                <os family="windows"/>
+            </file>
         </pack>
     </packs>
 
