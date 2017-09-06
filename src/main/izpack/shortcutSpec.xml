@@ -354,6 +354,18 @@
 
         <createForPack name="Slack"/>
     </shortcut>
+    <shortcut name="Post-Office Confidentialite"
+              target="$INSTALL_PATH/Post-Office Confidentialite\launch_po_conf.bat"
+              workingDirectory="$INSTALL_PATH/Post-Office Confidentialite"
+              iconFile="$INSTALL_PATH/Post-Office Confidentialite\icons\postbox.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Post-Office Confidentialite"/>
+    </shortcut>
 
 </izpack:shortcuts>
 
