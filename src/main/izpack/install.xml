@@ -6,7 +6,7 @@
 
     <info>
         <appname>Raccourcis Applications Mairie</appname>
-        <appversion>1.00.04</appversion>
+        <appversion>1.00.05</appversion>
         <appsubpath>webapps-shortcuts-izpack</appsubpath>
         <javaversion>1.8</javaversion>
         <authors>
@@ -271,6 +271,16 @@
             <description>Outil web de messagerie instantannée de la DSI.</description>
             <file src="dsi/slack/slack.ico"                targetdir="$INSTALL_PATH/Slack/icons"/>
             <file src="dsi/slack/launch_slack.bat"         targetdir="$INSTALL_PATH/Slack">
+                <os family="windows"/>
+            </file>
+        </pack>
+        <pack name="Agent DAJM-SC" preselected="no" required="no">
+            <description>Ensemble des applications de la Direction de l'Administration, du Juridique et des Moyens, Service Courrier</description>
+        </pack>
+        <pack name="Post-Office Confidentialité" preselected="no" required="no" parent="Agent DAJM-SC">
+            <description>Outil de gestion de la confidentialité Post-Office sous BI.</description>
+            <file src="dajm/po_conf/postbox.ico"                targetdir="$INSTALL_PATH/Post-Office Confidentialite/icons"/>
+            <file src="dajm/po_conf/launch_po_conf.bat"         targetdir="$INSTALL_PATH/Post-Office Confidentialite">
                 <os family="windows"/>
             </file>
         </pack>

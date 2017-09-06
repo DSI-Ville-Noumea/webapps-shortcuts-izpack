@@ -407,5 +407,19 @@
 
         <createForPack name="Slack"/>
     </shortcut>
+    <shortcut name="Post-Office Confidentialite"
+              target="xdg-open http://post-office-conf.site-mairie.noumea.nc"
+              workingDirectory="$INSTALL_PATH/Post-Office Confidentialite"
+              iconFile="$INSTALL_PATH/Post-Office Confidentialite\icons\postbox.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Post-Office Confidentialite"/>
+    </shortcut>
 </izpack:shortcuts>
 
