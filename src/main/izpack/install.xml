@@ -6,7 +6,7 @@
 
     <info>
         <appname>Raccourcis Applications Mairie</appname>
-        <appversion>1.00.05</appversion>
+        <appversion>1.00.06-SNAPSHOT</appversion>
         <appsubpath>webapps-shortcuts-izpack</appsubpath>
         <javaversion>1.8</javaversion>
         <authors>
@@ -281,6 +281,17 @@
             <description>Outil de gestion de la confidentialité Post-Office sous BI.</description>
             <file src="dajm/po_conf/postbox.ico"                targetdir="$INSTALL_PATH/Post-Office Confidentialite/icons"/>
             <file src="dajm/po_conf/launch_po_conf.bat"         targetdir="$INSTALL_PATH/Post-Office Confidentialite">
+                <os family="windows"/>
+            </file>
+        </pack>
+        
+        <pack name="Agent PAB" preselected="no" required="no">
+            <description>Ensemble des applications des PABs</description>
+        </pack>
+        <pack name="Appock" preselected="no" required="no" parent="Agent PAB">
+            <description>Outil de gestion des APProvisionnements et des stOCKs des fournitures administratives.</description>
+            <file src="appock/appock.ico"                targetdir="$INSTALL_PATH/Appock/icons"/>
+            <file src="appock/launch_appock.bat"         targetdir="$INSTALL_PATH/Appock">
                 <os family="windows"/>
             </file>
         </pack>
