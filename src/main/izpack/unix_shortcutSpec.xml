@@ -421,5 +421,19 @@
 
         <createForPack name="Post-Office Confidentialite"/>
     </shortcut>
+    <shortcut name="Appock"
+              target="xdg-open http://appock.site-mairie.noumea.nc"
+              workingDirectory="$INSTALL_PATH/Appock"
+              iconFile="$INSTALL_PATH/Appock\icons\appock.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes"
+              type="Application"
+              categories="Application;Applications Mairie;">
+
+        <createForPack name="Appock"/>
+    </shortcut>
 </izpack:shortcuts>
 

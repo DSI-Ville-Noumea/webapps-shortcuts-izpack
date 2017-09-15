@@ -366,6 +366,18 @@
 
         <createForPack name="Post-Office Confidentialite"/>
     </shortcut>
+    <shortcut name="Appock"
+              target="$INSTALL_PATH/Appock\launch_appock.bat"
+              workingDirectory="$INSTALL_PATH/Appock"
+              iconFile="$INSTALL_PATH/Appock\icons\appock.ico"
+              startup="no"
+              initialState="normal"
+              programGroup="yes"
+              desktop="yes"
+              startMenu="yes">
+
+        <createForPack name="Appock"/>
+    </shortcut>
 
 </izpack:shortcuts>
 
