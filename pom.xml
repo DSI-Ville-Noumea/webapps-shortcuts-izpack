@@ -9,7 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <izpack.version>5.1.2</izpack.version>
+        <izpack.version>5.1.3</izpack.version>
         <izpack.staging>${project.build.directory}/staging</izpack.staging>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
