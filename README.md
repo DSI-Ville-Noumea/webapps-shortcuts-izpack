@@ -5,3 +5,6 @@
 Installeur universel izpack de raccourcis pour les applis mairie.
 
 Article dédié sur [linkedIn](https://www.linkedin.com/pulse/izpack-possible-path-better-workstations-provisioning-adrien-sales/)
+
+
+A little demo that shows how to intergrate #izpack with #sccm in enterprise workstation deployment, with Continuous Integration on #github and #travisCI.
